@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello World</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/common.css" /> -->
+        <link rel="stylesheet" type="text/css" href="css/ratchet.css" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.css" />
+        <link rel="stylesheet" type="text/css" href="css/homePage.css" />
+        
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        
+        <script type="text/javascript" src="js/ratchet2.js"></script>
+        <script type="text/javascript" src="js/push.js"></script>
+        <script type="text/javascript" src="js/toggles.js"></script>
+        
+        <script type="text/javascript" src="js/navigation.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
+    </head>
+    <body>
+        <!-- This is the navigator header -->
+        <header class="bar bar-nav">
+            <a href="index.html">
+                <button class="btn btn-link btn-nav pull-left backHome">
+                    <span class="icon icon-left-nav"></span>
+                    Back
+                </button>
+            </a>
+
+            <h1 class="title">Never Forgotten</h1>
+        </header>
+
+        <!-- This is were the content of your app goes -->
+        <div class="content" id="homePage">
+            <div class="card">
+                <ul class="table-view">
+                    <li class="table-view-cell table-view-divider">Daily Greeting</li>
+                    <li class="table-view-cell">
+                        Add Sound
+                        <img src="img/icon-play-preview.png" class="playPreview" />
+                        <p id="soundDesc">"Good morning Jane. Today is..."</p>
+                        <div class="toggle" id="addSound">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </li>
+                    <li class="table-view-cell" id="addTime">
+                        Greeting Time
+                        <label id="welcomeTimeLabel">
+                            <span id="welcomeTimeString">9:00 AM</span><span class="icon icon-edit"></span>
+                            <input id="welcomeTime" type="time" value="09:00" disabled/>
+                        </label>
+                    </li>
+                </ul>
+                <ul></ul>
+                <ul class="table-view">
+                    <li class="table-view-cell table-view-divider">Layout</li>
+                    <li class="table-view-cell">
+                        Call Button
+                        <div class="toggle active" id="addCall">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </li>
+                    <li class="table-view-cell">
+                        Create Event Button
+                        <div class="toggle active" id="addEvent">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </li>
+                    <li class="table-view-cell">
+                        SOS Button
+                        <div class="toggle active" id="addSOS">
+                            <div class="toggle-handle"></div>
+                        </div>
+                    </li>
+                    <li class="table-view-cell" id="previewLayout">
+                        <span id="previewLayoutText">Preview Layout</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        
+    </body>
+</html>

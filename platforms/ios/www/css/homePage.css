@@ -1,0 +1,66 @@
+#soundDesc {
+    /*Default is 11px*/
+    font-size: 13px;
+}
+
+/* Invisible time input*/
+#welcomeTime {
+    opacity: 0;
+    color:rgba(255,255,255, 0);
+    right: 0px;
+    top: 50%;
+    position: absolute;
+    width: 7em;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: none;
+    border: 1px solid #000000;
+    display: block;
+}
+
+#welcomeTimeLabel {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+}
+
+#welcomeTimeString {
+    color: #0062cc;
+}
+
+#welcomeTimeLabel .icon-edit {
+    margin-left: 5px;
+}
+
+#addTime {
+    opacity: 0.2;
+}
+
+.icon-play {
+    color: #333333;
+}
+
+.playPreview {
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px);
+}
+
+.icon-edit, .icon-play {
+    -webkit-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+/*center preview greeting*/
+#previewGreeting {
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 13px;
+}
+
+#previewLayoutText {
+    text-align: center;
+}
+
