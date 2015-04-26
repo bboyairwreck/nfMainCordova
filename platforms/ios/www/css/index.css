@@ -17,7 +17,7 @@ html, body, .content {
 }
 
 .header {
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
     overflow: hidden;
     height: 20%;
 }
@@ -103,6 +103,12 @@ html, body, .content {
         width: 45%;
         height: 100%;
 
+    }
+
+    .bigActionButton {
+        text-align: center;
+        font-size: 3em;
+        line-height: 2em;
     }
 
 
