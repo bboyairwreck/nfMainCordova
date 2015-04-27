@@ -43,7 +43,7 @@ function dateFormat(dateString) {
 
     var dateObj = new Date(dateString);
 
-    var year = dateObj.getYear();
+    var year = dateObj.getFullYear();
     var month = dateObj.getMonth();
     var day = dateObj.getDate();
     var dayOfWeek = dateObj.getDay();
