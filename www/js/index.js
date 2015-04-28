@@ -36,6 +36,10 @@ function fetchData() {
  */
 
 function ajaxSuccess(data) {
+
+    // TODO Remove this so that way we don't clear anything and only prepend
+    $("#remindersWrap").html("");
+
     for (var i = 0; i < data.length; i++){
         var $newCard = $("#reminderTemplate .reminderDayWrap").clone();
 
@@ -75,6 +79,18 @@ function ajaxError( xhr, status, errorThrown ) {
     console.dir(xhr);
 }
 
+var syncTimer = null;
 $("#callButton").click(function() {
-    fetchData();
+
+
+    syncTimer = setInterval(function(){
+
+        fetchData();
+    }, 1000);
+
 });
+
+$("#eventButton").click(function() {
+    clearInterval(syncTimer);
+});
+
