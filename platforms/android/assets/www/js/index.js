@@ -36,8 +36,12 @@ function fetchData() {
  */
 
 function ajaxSuccess(data) {
+
+    // TODO Remove this so that way we don't clear anything and only prepend
+    //$("#remindersWrap").html("");
+    //
     for (var i = 0; i < data.length; i++){
-        var $newCard = $("#reminderTemplate .reminderDayWrap").clone();
+        var $newCard = $("#reminderTemplate .reminderCardWrap").clone();
 
         var evTitle = data[i]["EventTitle"];
         var evDatetime = data[i]["EventTime"];
@@ -52,19 +56,24 @@ function ajaxSuccess(data) {
 
         // inject any thing inside of $newTask;
         $eventTitle = $newCard.find(".reminderTitle");
-        $eventTitle.text(evTitle);
+        $eventTitle.html(evTitle);
 
         $eventTime = $newCard.find(".reminderTime");
         $eventTime.text(evTimeFormatted);
 
-        $eventDate = $newCard.find("h2");
+        $eventDate = $newCard.find(".reminderDate");
         $eventDate.text(dateFormatArr["dateLine"]);
 
         //  dateFormatArr["dayName"] + dateFormatArr["monthName"]
 
 
-        $("#remindersWrap").prepend($newCard);
+
+        //$("#remindersWrap").prepend($newCard);
+        $(".dayCardWrap").prepend($newCard);
+
+        $(".dayWrap").attr("data-dateTime", evDatetime);
     }
+
 
 }
 
@@ -75,6 +84,26 @@ function ajaxError( xhr, status, errorThrown ) {
     console.dir(xhr);
 }
 
+var syncTimer = null;
 $("#callButton").click(function() {
-    fetchData();
+
+
+    syncTimer = setInterval(function(){
+
+        fetchData();
+    }, 1000);
+
 });
+
+$(".actionButton").on("touchstart", function() {
+   $(this).css("-webkit-transform", "scale(.96)");
+});
+
+$("body").on("touchend", function() {
+    $(".actionButton").css("-webkit-transform", "scale(1.0)");
+});
+
+$("#sosButton").click(function() {
+    clearInterval(syncTimer);
+});
+

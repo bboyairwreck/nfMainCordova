@@ -43,19 +43,19 @@ function dateFormat(dateString) {
 
     var dateObj = new Date(dateString);
 
-    var year = dateObj.getYear();
-    var month = dateObj.getMonth();
-    var day = dateObj.getDate();
+    var year = dateObj.getFullYear();
+    var month = dateObj.getMonth() + 1;
+    var day = dateObj.getDate() + 1;    // day of the month
     var dayOfWeek = dateObj.getDay();
 
     var result = [];
     result["year"] = year;
     result["month"] = month;
-    result["monthName"] = monthNames[month];
+    result["monthName"] = monthNames[month-1];
     result["day"] = day;
     result["dayName"] = dayNames[dayOfWeek];
-
-    result["dateLine"] = monthNames[month] + " " + day + ", " + year;
+    // dateLine ~ "April 12, 2015"
+    result["dateLine"] = monthNames[month-1] + " " + day + ", " + year;
 
     return result;
 }
