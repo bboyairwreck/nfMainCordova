@@ -15,7 +15,7 @@ html, body, .content {
 
 header h1, header h2 {
     font-weight: normal;
-    font-size: 3em;
+    font-size: 3.2em;
 }
 
 header h2 {
@@ -24,6 +24,7 @@ header h2 {
 }
 
 #actionWrap {
+    padding-top: 60px;
     padding-left: 1.6%;
     padding-right: 1.6%;
     text-align: center;
@@ -65,7 +66,6 @@ header h2 {
     padding-right: 1.6%;
     float: right;
 
-    /*overflow: hidden;*/
 }
     #rightPanel h1, #rightPanel h3 {
         text-align: center;
@@ -81,27 +81,40 @@ header h2 {
     #remindersWrap {
 
         background-color: #F3F2F2;
-        height: 70%;
-        width: 100%;
+        height: 73%;
+        width: 97%;
+        margin-left: 1.5%;
         /*width: 66.66666666666666666%;*/
-        padding-top: 30px;
+        padding-top: 20px;
         padding-left: 30px;
         padding-right: 30px;
+
+        margin-top: 10px;
 
         overflow: scroll;
 
     }
+        .dayHeader {
+            font-weight: normal;
+            font-size: 2em;
+            color: #747474;
+            -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
 
-        .reminderDayWrap {
+        }
+
+        .reminderCardWrap {
             margin-bottom: 30px;
             background-color: #ffffff;
         }
 
-            .reminderDayWrap h2{
+            .reminderTitle {
                 background-color: #00C2FF;
                 color: #ffffff;
-                text-transform: uppercase;
+                /*text-transform: uppercase;*/
                 padding: 10px;
+                font-weight: normal;
+                font-size: 2em;
             }
 
             .reminderContent {
@@ -111,15 +124,14 @@ header h2 {
 
                 .reminderLine {
                     overflow: hidden;
+                    font-size: 1.5em;
                 }
 
-                    .reminderTitle {
+                    .reminderTime {
                         float: left;
-                        width: 80%;
-                        overflow: hidden;
                     }
 
-                    .reminderTime {
+                    .reminderDate {
                         float: right;
                     }
 

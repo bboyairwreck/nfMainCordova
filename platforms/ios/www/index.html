@@ -32,11 +32,11 @@
                     <h2>What would you like to do?</h2>
                 </header>
 
-                <a href="createReminder.html" data-transition="slide-in">
-                    <img class="centerBlock actionButton" src="img/createReminder.png" alt="Create Reminder">
+                <a href="createReminder.html" class="centerBlock" data-transition="slide-in">
+                    <img class="actionButton" src="img/createReminder.png" alt="Create Reminder">
                 </a>
-                <a href="createReminder.html" data-transition="slide-in">
-                    <img class="centerBlock actionButton" src="img/viewAllReminders.png" alt="View All Reminders">
+                <a href="createReminder.html" class="centerBlock" data-transition="slide-in">
+                    <img class="actionButton" src="img/viewAllReminders.png" alt="View All Reminders">
                 </a>
 
                 <div class="callSOSwrap centerBlock">
@@ -48,33 +48,32 @@
             <div id="rightPanel">
                 <h1>9:46 AM</h1>
                 <h3>Wednesday, May 6th, 2015</h3>
-                <div id="remindersWrap">
 
+                <div id="remindersWrap">
+                    <div class="dayWrap">
+                        <h4 class="dayHeader">Today</h4>
+                        <div class="dayCardWrap">
+                            <!-- reminders go in here -->
+                        </div>
+                    </div>
                 </div>
 
+                <!-- reminderTemplate -->
                 <div id="reminderTemplate" style="display:none">
 
-                    <div class="reminderDayWrap">
-                        <h2>TODAY</h2>
+                    <div class="reminderCardWrap">
+                        <h2 class="reminderTitle">Dinner with George</h2>
                         <div class="reminderContent">
                             <div class="reminderLine">
-                                <div class="reminderTitle">Dinner with Sarah</div>
                                 <div class="reminderTime">9 PM</div>
+                                <div class="reminderDate">May 6th</div>
                             </div>
                         </div>
                     </div>
-
                 </div>
+                <!-- end of reminderTemplate -->
             </div>
 
-            <!--<div id="actionWrap">-->
-                <!--<div class="bigActionButton" id="eventButton">-->
-                    <!--Create Reminder-->
-                <!--</div>-->
-                <!--<div class="bigActionButton" id="callButton">-->
-                    <!--Call-->
-                <!--</div>-->
-            <!--</div>-->
         </div>
     </body>
 </html>

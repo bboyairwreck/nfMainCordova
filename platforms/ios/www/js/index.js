@@ -38,10 +38,10 @@ function fetchData() {
 function ajaxSuccess(data) {
 
     // TODO Remove this so that way we don't clear anything and only prepend
-    $("#remindersWrap").html("");
-
+    //$("#remindersWrap").html("");
+    //
     for (var i = 0; i < data.length; i++){
-        var $newCard = $("#reminderTemplate .reminderDayWrap").clone();
+        var $newCard = $("#reminderTemplate .reminderCardWrap").clone();
 
         var evTitle = data[i]["EventTitle"];
         var evDatetime = data[i]["EventTime"];
@@ -61,14 +61,19 @@ function ajaxSuccess(data) {
         $eventTime = $newCard.find(".reminderTime");
         $eventTime.text(evTimeFormatted);
 
-        $eventDate = $newCard.find("h2");
+        $eventDate = $newCard.find(".reminderDate");
         $eventDate.text(dateFormatArr["dateLine"]);
 
         //  dateFormatArr["dayName"] + dateFormatArr["monthName"]
 
 
-        $("#remindersWrap").prepend($newCard);
+
+        //$("#remindersWrap").prepend($newCard);
+        $(".dayCardWrap").prepend($newCard);
+
+        $(".dayWrap").attr("data-dateTime", evDatetime);
     }
+
 
 }
 
@@ -88,6 +93,14 @@ $("#callButton").click(function() {
         fetchData();
     }, 1000);
 
+});
+
+$(".actionButton").on("touchstart", function() {
+   $(this).css("-webkit-transform", "scale(.96)");
+});
+
+$("body").on("touchend", function() {
+    $(".actionButton").css("-webkit-transform", "scale(1.0)");
 });
 
 $("#sosButton").click(function() {
