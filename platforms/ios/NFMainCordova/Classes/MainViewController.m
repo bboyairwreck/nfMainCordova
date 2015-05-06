@@ -75,6 +75,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
+    // prevent bounce
+    self.webView.scalesPageToFit = YES;
+    [[self.webView scrollView] setBounces:NO];
+
+    // remove Status bar
+    if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+        // iOS 7
+        [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+    } else {
+        // iOS 6
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+    }
+}
+
+- (BOOL)prefersStatusBarHidden {
+    return YES;
 }
 
 - (void)viewDidUnload

@@ -11,105 +11,150 @@ html, body, .content {
 /* Portrait layout (default) */
 
 .content {
-    padding-top:20px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
-.header {
-    /*border: 1px solid #000000;*/
-    overflow: hidden;
-    height: 20%;
+header h1, header h2 {
+    font-weight: normal;
+    font-size: 3em;
 }
 
-    #sosButton {
-        float:right;
-        height: 100%;
+header h2 {
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+#actionWrap {
+    padding-left: 1.6%;
+    padding-right: 1.6%;
+    text-align: center;
+
+}
+
+.centerBlock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerBlock:not(:first-child) {
+    margin-top: 18px;
+}
+
+    .callSOSwrap {
+        overflow: hidden;
     }
 
-    #titleWrap{
-        width: 75%;
-    }
-
-        #titleWrap h1{
-            font-family: 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-            font-weight: normal;
+        .callButton {
+            float: left;
         }
 
-#remindersWrap {
-    background-color: #F3F2F2;
-    height: 54%;
-    width: 100%;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-top: 3%;
-    margin-bottom: 30px;
-    overflow: scroll;
-}
-
-    .reminderDayWrap {
-        margin-bottom: 30px;
-        background-color: #ffffff;
-    }
-
-        .reminderDayWrap h2{
-            background-color: #9013FE;
-            color: #ffffff;
-            text-transform: uppercase;
+        .sosButton {
+            float: right;
         }
 
-        .reminderContent {
+#actionWrap {
+    width: 33.33333333333333333%;
+    height: 100%;
+    float: left;
+
+}
+
+#rightPanel {
+    height: 100%;
+    width: 66.66666666666666666%;
+    padding-right: 1.6%;
+    float: right;
+
+    /*overflow: hidden;*/
+}
+    #rightPanel h1, #rightPanel h3 {
+        text-align: center;
+        font-size: 7em;
+        font-weight: normal;
+    }
+
+    #rightPanel h3 {
+        font-size: 1.5em;
+    }
+
+
+    #remindersWrap {
+
+        background-color: #F3F2F2;
+        height: 70%;
+        width: 100%;
+        /*width: 66.66666666666666666%;*/
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        overflow: scroll;
+
+    }
+
+        .reminderDayWrap {
+            margin-bottom: 30px;
             background-color: #ffffff;
-            padding: 10px;
         }
 
-            .reminderLine {
-                overflow: hidden;
+            .reminderDayWrap h2{
+                background-color: #00C2FF;
+                color: #ffffff;
+                text-transform: uppercase;
+                padding: 10px;
             }
 
-                .reminderTitle {
-                    float: left;
-                    width: 80%;
+            .reminderContent {
+                background-color: #ffffff;
+                padding: 10px;
+            }
+
+                .reminderLine {
                     overflow: hidden;
                 }
 
-                .reminderTime {
-                    float: right;
-                }
+                    .reminderTitle {
+                        float: left;
+                        width: 80%;
+                        overflow: hidden;
+                    }
 
-#actionWrap {
-    position: fixed;
-    bottom: 20px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    height: 20%;
-    overflow: hidden;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+                    .reminderTime {
+                        float: right;
+                    }
 
-    #eventButton {
-        float: left;
-        background-color: #F1C40F;
-        width: 45%;
-        height: 100%;
-    }
+/*#actionWrap {*/
+    /*position: fixed;*/
+    /*bottom: 20px;*/
+    /*left: 0px;*/
+    /*right: 0px;*/
+    /*width: 100%;*/
+    /*height: 20%;*/
+    /*overflow: hidden;*/
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+/*}*/
 
-    #callButton {
-        float: right;
-        background-color: #99CC31;
-        width: 45%;
-        height: 100%;
+    /*#eventButton {*/
+        /*float: left;*/
+        /*background-color: #F1C40F;*/
+        /*width: 45%;*/
+        /*height: 100%;*/
+    /*}*/
 
-    }
+    /*#callButton {*/
+        /*float: right;*/
+        /*background-color: #99CC31;*/
+        /*width: 45%;*/
+        /*height: 100%;*/
 
-    .bigActionButton {
-        text-align: center;
-        font-size: 3em;
-        line-height: 2em;
-    }
+    /*}*/
+
+    /*.bigActionButton {*/
+        /*text-align: center;*/
+        /*font-size: 3em;*/
+        /*line-height: 2em;*/
+    /*}*/
 
 
 /* Landscape layout (with min-width) */
