@@ -25,54 +25,26 @@
     <body>
 
         <!-- This is were the content of your app goes -->
-        <div class="content" id="index">
-            <div id="actionWrap">
+        <div class="content" id="createReminder">
+            <div id="leftPanel">
                 <header>
-                    <h1 id="greeting">Create Reminder</h1>
+                    <h1 id="greeting">What is the name of your reminder?</h1>
                 </header>
 
-                <a href="createReminder.html" data-transition="slide-in">
-                    <img class="centerBlock actionButton" src="img/createReminder.png" alt="Create Reminder">
+                <a href="index.html" data-transition="slide-in">
+                    <img class="navButtons back" src="img/back.png" alt="Back">
                 </a>
-                <img class="centerBlock actionButton" src="img/viewAllReminders.png" alt="View All Reminders">
-                <div class="callSOSwrap centerBlock">
-                    <img class="actionButton sosButton" src="img/sos.png" alt="SOS">
-                    <img class="actionButton callButton"  src="img/call.png" alt="Call">
-                </div>
-
-
             </div>
 
             <div id="rightPanel">
-                <h1>9:46 AM</h1>
-                <h3>Wednesday, May 6th, 2015</h3>
-                <div id="remindersWrap">
+                <form>
+                    <input type="text" placeholder="Write Name Here" />
+                </form>
 
-                </div>
-
-                <div id="reminderTemplate" style="display:none">
-
-                    <div class="reminderDayWrap">
-                        <h2>TODAY</h2>
-                        <div class="reminderContent">
-                            <div class="reminderLine">
-                                <div class="reminderTitle">Dinner with Sarah</div>
-                                <div class="reminderTime">9 PM</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <a href="index.html" data-transition="slide-in">
+                    <img class="navButtons next" src="img/next.png" alt="Next">
+                </a>
             </div>
-
-            <!--<div id="actionWrap">-->
-            <!--<div class="bigActionButton" id="eventButton">-->
-            <!--Create Reminder-->
-            <!--</div>-->
-            <!--<div class="bigActionButton" id="callButton">-->
-            <!--Call-->
-            <!--</div>-->
-            <!--</div>-->
         </div>
     </body>
 </html>
