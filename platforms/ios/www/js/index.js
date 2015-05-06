@@ -90,7 +90,7 @@ $("#callButton").click(function() {
 
 });
 
-$("#eventButton").click(function() {
+$("#sosButton").click(function() {
     clearInterval(syncTimer);
 });
 

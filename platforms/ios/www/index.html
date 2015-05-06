@@ -26,28 +26,23 @@
 
         <!-- This is were the content of your app goes -->
         <div class="content" id="index">
-            <!--<div class="header">-->
-                <!--<img id="sosButton" src="img/sosButton.png" alt="SOS Button" />-->
-                <!--<div id="titleWrap">-->
-                    <!--<h1>12:47</h1>-->
-                    <!--<h1>Monday</h1>-->
-                    <!--<h1>April 15, 2015</h1>-->
-                <!--</div>-->
-            <!--</div>-->
             <div id="actionWrap">
                 <header>
                     <h1 id="greeting">Hello Wendy</h1>
                     <h2>What would you like to do?</h2>
                 </header>
 
-                <img class="centerBlock actionButton" src="img/createReminder.png" alt="Create Reminder">
-                <img class="centerBlock actionButton" src="img/viewAllReminders.png" alt="View All Reminders">
+                <a href="createReminder.html" data-transition="slide-in">
+                    <img class="centerBlock actionButton" src="img/createReminder.png" alt="Create Reminder">
+                </a>
+                <a href="createReminder.html" data-transition="slide-in">
+                    <img class="centerBlock actionButton" src="img/viewAllReminders.png" alt="View All Reminders">
+                </a>
+
                 <div class="callSOSwrap centerBlock">
-                    <img class="actionButton sosButton" src="img/sos.png" alt="SOS">
-                    <img class="actionButton callButton"  src="img/call.png" alt="Call">
+                    <img id="sosButton" class="actionButton sosButton" src="img/sos.png" alt="SOS">
+                    <img id="callButton" class="actionButton callButton"  src="img/call.png" alt="Call">
                 </div>
-
-
             </div>
 
             <div id="rightPanel">
