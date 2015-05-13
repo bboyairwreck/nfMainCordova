@@ -1,73 +1,68 @@
-/*body {*/
-    /*background-color:#E4E4E4;*/
-    /*font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;*/
-/*}*/
-
-/*html, body, .content {*/
-    /*height: 100%;*/
-    /*background-color: #ffffff;*/
-/*}*/
-
 /* Portrait layout (default) */
 
-/*header.create, form.create {*/
-    /*height: 80%;*/
-/*}*/
+#createReminderName {
+    height: 100%;
+    background-color: #ffffff;
+}
 
-/*form.create {*/
-    /*font-size: medium;*/
-    /*padding-top: 60%;*/
-/*}*/
+header.create, form.create {
+    height: 80%;
+}
 
-/*header.create h1 {*/
-    /*font-weight: normal;*/
-    /*font-size: 5em;*/
-    /*vertical-align: middle;*/
-    /*padding-top: 25%;*/
-/*}*/
+form.create {
+    font-size: medium;
+    padding-top: 60%;
+}
 
-/*input.create {*/
-    /*width: 85%;*/
-/*}*/
+header.create h1 {
+    font-weight: normal;
+    font-size: 5em;
+    vertical-align: middle;
+    padding-top: 25%;
+}
 
-/*#leftPanel {*/
-    /*padding-left: 1.6%;*/
-    /*padding-right: 1.6%;*/
-    /*text-align: center;*/
-    /*width: 47%;*/
-    /*height: 100%;*/
-    /*float: left;*/
-/*}*/
+input.create {
+    width: 85%;
+}
 
-/*#rightPanel {*/
-    /*height: 100%;*/
-    /*width: 50%;*/
-    /*padding-right: 1.6%;*/
-    /*float: right;*/
+#leftPanel {
+    padding-left: 1.6%;
+    padding-right: 1.6%;
+    text-align: center;
+    width: 47%;
+    height: 100%;
+    float: left;
+}
 
-    /*overflow: hidden;*/
-/*}*/
+#rightPanel {
+    height: 100%;
+    width: 50%;
+    padding-right: 1.6%;
+    float: right;
 
-/*.navButtons {*/
-    /*bottom: 0;*/
-/*}*/
+    overflow: hidden;
+}
 
-/*.back {*/
-    /*float: left;*/
-/*}*/
+.navButtons {
+    bottom: 0;
+}
 
-/*.next {*/
-    /*float: right;*/
-/*}*/
+.back {
+    float: left;
+}
 
-/*label {*/
-    /*font-size: 3em;*/
-    /*color: black;*/
-/*}*/
+.next {
+    float: right;
+}
+
+label {
+    font-size: 3em;
+    color: black;
+}
 
 
 
 /* Landscape layout (with min-width) */
-/*@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {*/
-    /*Landscape code goes in here */
-/*}*/
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    Landscape code goes in here
+}
