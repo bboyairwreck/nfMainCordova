@@ -24,56 +24,17 @@
 </head>
 <body>
 
-<!-- This is were the content of your app goes -->
-<div class="content" id="reminderConfirmation">
-    <div id="actionWrap">
-        <header>
-            <h1 id="greeting">Hello Wendy</h1>
-            <h2>What would you like to do?</h2>
-        </header>
+    <!-- This is were the content of your app goes -->
+    <div class="content" id="reminderConfirmation">
+        <div id="confirmationWrap">
+            <header>
+                <h1 id="confirmation">Reminder Created!</h1>
+            </header>
 
-        <a href="createReminder.html" class="centerBlock" data-transition="slide-in">
-            <img class="actionButton" src="img/createReminder.png" alt="Create Reminder">
-        </a>
-        <a href="createReminder.html" class="centerBlock" data-transition="slide-in">
-            <img class="actionButton" src="img/viewAllReminders.png" alt="View All Reminders">
-        </a>
-
-        <div class="callSOSwrap centerBlock">
-            <img id="sosButton" class="actionButton sosButton" src="img/sos.png" alt="SOS">
-            <img id="callButton" class="actionButton callButton"  src="img/call.png" alt="Call">
+            <a href="index.html" data-transition="slide-in">
+                <button class="btn">Done</button>
+            </a>
         </div>
     </div>
-
-    <div id="rightPanel">
-        <h1>9:46 AM</h1>
-        <h3>Wednesday, May 6th, 2015</h3>
-
-        <div id="remindersWrap">
-            <div class="dayWrap">
-                <h4 class="dayHeader">Today</h4>
-                <div class="dayCardWrap">
-                    <!-- reminders go in here -->
-                </div>
-            </div>
-        </div>
-
-        <!-- reminderTemplate -->
-        <div id="reminderTemplate" style="display:none">
-
-            <div class="reminderCardWrap">
-                <h2 class="reminderTitle">Dinner with George</h2>
-                <div class="reminderContent">
-                    <div class="reminderLine">
-                        <div class="reminderTime">9 PM</div>
-                        <div class="reminderDate">May 6th</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of reminderTemplate -->
-    </div>
-
-</div>
 </body>
 </html>

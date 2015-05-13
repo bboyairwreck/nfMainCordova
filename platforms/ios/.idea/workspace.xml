@@ -77,7 +77,7 @@
       <file leaf-file-name="createReminderName.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../www/createReminderName.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.625" vertical-offset="87" max-vertical-offset="810">
+            <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="810">
               <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
               <folding />
             </state>
@@ -87,7 +87,7 @@
       <file leaf-file-name="createReminderDate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../www/createReminderDate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.375" vertical-offset="117" max-vertical-offset="840">
+            <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="840">
               <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding />
             </state>
@@ -97,8 +97,8 @@
       <file leaf-file-name="createReminderTime.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../www/createReminderTime.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5297398" vertical-offset="15" max-vertical-offset="840">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.65789473" vertical-offset="15" max-vertical-offset="840">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -231,7 +231,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Cidr.FilesView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,6 +327,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -717,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1755">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,14 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../www/css/createReminderName.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../www/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1050">
@@ -792,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../www/createReminderName.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.625" vertical-offset="87" max-vertical-offset="810">
+        <state vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="810">
           <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
           <folding />
         </state>
@@ -800,16 +791,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../www/createReminderDate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.375" vertical-offset="117" max-vertical-offset="840">
+        <state vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="840">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../www/css/createReminderName.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1170">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../www/createReminderTime.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5297398" vertical-offset="15" max-vertical-offset="840">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.65789473" vertical-offset="15" max-vertical-offset="840">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding />
         </state>
       </provider>
