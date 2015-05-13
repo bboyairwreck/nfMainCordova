@@ -12,6 +12,7 @@ function getPageName() {
 }
 
 function checkPage() {
+
     pageStack.push(getPageName());
     
     var content = document.getElementsByClassName("content")[0];
@@ -37,9 +38,27 @@ function checkPage() {
         fileref.setAttribute("rel", "stylesheet");
         fileref.setAttribute("type", "text/css");
         fileref.setAttribute("href", cssFileName);
+        fileref.id = "css_" + cssFileName;
 
         if (typeof fileref != "undefined") {
             document.getElementsByTagName("head")[0].appendChild(fileref);
         }
+
+        disableOtherCSS(pageName);
     }
+}
+
+function disableOtherCSS(pageName) {
+
+    var $css = $('link:not([href="css/' + pageName + '.css"],' +
+                 ' [href="css/ratchet-theme-ios.css"],' +
+                 ' [href="css/ratchet.css"],' +
+                 '[href="css/common.css"])');
+
+    var string = "";
+    $css.each(function(index){
+        $(this).attr("disabled", "disabled");
+        //string += "; " + $(this).attr("href");
+    });
+
 }
