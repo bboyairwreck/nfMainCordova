@@ -13,3 +13,53 @@ body {
     padding:0px;
     width:100%;
 }
+
+header.create, form.create {
+    height: 80%;
+}
+
+form.create {
+    font-size: medium;
+    padding-top: 60%;
+}
+
+header.create h1 {
+    font-weight: normal;
+    font-size: 5em;
+    vertical-align: middle;
+    padding-top: 25%;
+}
+
+input.create {
+    width: 85%;
+}
+
+#leftPanel {
+    padding-left: 1.6%;
+    padding-right: 1.6%;
+    text-align: center;
+    width: 47%;
+    height: 100%;
+    float: left;
+}
+
+#rightPanel {
+    height: 100%;
+    width: 50%;
+    padding-right: 1.6%;
+    float: right;
+
+    /*overflow: hidden;*/
+}
+
+.navButtons {
+    bottom: 0;
+}
+
+.back {
+    float: left;
+}
+
+.next {
+    float: right;
+}

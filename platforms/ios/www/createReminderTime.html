@@ -8,7 +8,7 @@
     <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-    <!-- <link rel="stylesheet" type="text/css" href="css/common.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
     <link rel="stylesheet" type="text/css" href="css/ratchet.css" />
     <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.css" />
 
@@ -27,18 +27,19 @@
 <!-- This is were the content of your app goes -->
 <div class="content" id="createReminderTime">
     <div id="leftPanel">
-        <header>
-            <h1 id="greeting">What is the name of your reminder?</h1>
+        <header class="create">
+            <h1 id="greeting">What time is your event?</h1>
         </header>
 
         <a href="index.html" data-transition="slide-in">
             <img class="navButtons back" src="img/back.png" alt="Back">
-        </a>
+        </a>s
     </div>
 
     <div id="rightPanel">
-        <form>
-            <input type="text" placeholder="Write Name Here" />
+        <form class="create">
+            Pick a time:
+            <input type="time" class="create" />
         </form>
 
         <a href="reminderConfirmation.html" data-transition="slide-in">
