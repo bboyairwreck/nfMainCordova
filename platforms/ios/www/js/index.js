@@ -106,4 +106,3 @@ $("body").on("touchend", function() {
 $("#sosButton").click(function() {
     clearInterval(syncTimer);
 });
-
