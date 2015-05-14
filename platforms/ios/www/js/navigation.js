@@ -33,18 +33,18 @@ function checkPage() {
             console.log(jqxhr);
         });
 
-        var cssFileName = "css/" + pageName +".css";
-        var fileref = document.createElement("link");
-        fileref.setAttribute("rel", "stylesheet");
-        fileref.setAttribute("type", "text/css");
-        fileref.setAttribute("href", cssFileName);
-        fileref.id = "css_" + cssFileName;
-
-        if (typeof fileref != "undefined") {
-            document.getElementsByTagName("head")[0].appendChild(fileref);
-        }
-
-        disableOtherCSS(pageName);
+        //var cssFileName = "css/" + pageName +".css";
+        //var fileref = document.createElement("link");
+        //fileref.setAttribute("rel", "stylesheet");
+        //fileref.setAttribute("type", "text/css");
+        //fileref.setAttribute("href", cssFileName);
+        //fileref.id = "css_" + cssFileName;
+        //
+        //if (typeof fileref != "undefined") {
+        //    document.getElementsByTagName("head")[0].appendChild(fileref);
+        //}
+        //
+        //disableOtherCSS(pageName);
     }
 }
 

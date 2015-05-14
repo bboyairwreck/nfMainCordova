@@ -118,20 +118,20 @@ header h2 {
 
 }
 
-#rightPanel {
+#rightMainPanel {
     height: 100%;
     width: 66.66666666666666666%;
     padding-right: 1.6%;
     float: right;
 
 }
-    #rightPanel h1, #rightPanel h3 {
+    #rightMainPanel h1, #rightMainPanel h3 {
         text-align: center;
         font-size: 7em;
         font-weight: normal;
     }
 
-    #rightPanel h3 {
+    #rightMainPanel h3 {
         font-size: 1.5em;
     }
 
