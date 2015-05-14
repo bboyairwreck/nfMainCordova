@@ -62,3 +62,23 @@ function disableOtherCSS(pageName) {
     });
 
 }
+
+function navWithParams(pageHref) {
+
+    var targetElement = document.getElementById('ghost');
+    targetElement.href = pageHref;
+
+    var evt = document.createEvent('UIEvent');
+    evt.initUIEvent('touchend', true, true, window, 1);
+    targetElement.dispatchEvent(evt);
+}
+
+var params = [];
+
+function getParams() {
+    if (params.length > 0){
+        return params[params.length - 1];
+    } else {
+        return null;
+    }
+}

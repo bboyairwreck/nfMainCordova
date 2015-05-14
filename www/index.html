@@ -28,7 +28,7 @@
         <div class="content" id="index">
             <div id="actionWrap">
                 <header>
-                    <h1 id="greeting">Hello Wendy</h1>
+                    <h1 id="greeting" data-href="createReminderTime.html">Hello Wendy</h1>
                     <h2>What would you like to do?</h2>
                 </header>
 
@@ -76,6 +76,8 @@
                 <!-- end of reminderTemplate -->
             </div>
 
+
+
             <!-- reminderConfirmation -->
             <div id="confirmationBox" style="display:none;">
                 <header id="confirmationText">
@@ -83,6 +85,15 @@
                 </header>
             </div>
             <!-- end of reminderConfirmation -->
+        </div>
+
+        <div data-href="index.html">
+
+        </div>
+
+        <!-- ghost anchor for anc -->
+        <div style="display:none">
+            <a id="ghost" href="index.html" data-transition="slide-in"></a>
         </div>
     </body>
 </html>

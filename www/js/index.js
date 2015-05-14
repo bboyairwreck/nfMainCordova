@@ -1,5 +1,5 @@
 var patientID = 17;
-var needConfirmation = true;
+var needConfirmation = false;
 
 $(document).ready(function() {
     if (needConfirmation) {
@@ -91,4 +91,15 @@ $("body").on("touchend", function() {
 
 $("#sosButton").click(function() {
     clearInterval(syncTimer);
+});
+
+$("#greeting").click(function() {
+
+    // add param data
+    var eventInfo = [];
+    eventInfo["eventName"] = "George is awesome";
+    params.push(eventInfo);
+
+    var href = $(this).data("href");    // page location
+    navWithParams(href);
 });
