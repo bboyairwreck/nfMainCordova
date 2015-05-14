@@ -1,6 +1,10 @@
 var patientID = 17;
+var needConfirmation = true;
 
 $(document).ready(function() {
+    if (needConfirmation) {
+        $("#confirmationBox").fadeIn(700).delay(2000).fadeOut(700);
+    }
     fetchData();
 });
 
@@ -16,24 +20,6 @@ function fetchData() {
         error : ajaxError
     });
 }
-
-
-/*
-
- <div class="reminderDayWrap">
-     <h2>TODAY</h2>
-     <div class="reminderContent">
-        <div class="reminderLine">
-            <div class="reminderTitle">Dinner with Sarah</div>
-            <div class="reminderTime">9 PM</div>
-        </div>
-        <div class="reminderLine">
-            <div class="reminderTitle">Take medication</div>
-            <div class="reminderTime">10 AM</div>
-        </div>
-     </div>
- </div>
- */
 
 function ajaxSuccess(data) {
 
