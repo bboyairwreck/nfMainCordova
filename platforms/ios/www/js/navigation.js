@@ -63,6 +63,19 @@ function disableOtherCSS(pageName) {
 
 }
 
+/*
+// Example of adding params
+    $("#SOME_BUTTON_ID").click(function() {
+
+        // add param data
+        var eventInfo = [];
+        eventInfo["eventName"] = "George is awesome";
+        params.push(eventInfo);
+
+        var href = $(this).data("href");    // page location
+        navWithParams(href);
+    });
+*/
 function navWithParams(pageHref) {
 
     var targetElement = document.getElementById('ghost');
@@ -73,8 +86,18 @@ function navWithParams(pageHref) {
     targetElement.dispatchEvent(evt);
 }
 
-var params = [];
 
+
+/*
+// Example of getting params
+     myParams = getParams();
+
+     if (myParams != null) {
+         var eventName = myParams["eventName"];
+         alert(eventName);
+     }
+*/
+var params = [];
 function getParams() {
     if (params.length > 0){
         return params[params.length - 1];

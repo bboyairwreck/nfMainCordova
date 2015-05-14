@@ -3,6 +3,7 @@ $(document).ready(function() {
 
     if (myParams != null) {
         var eventName = myParams["eventName"];
-        alert(eventName);
+        var eventDate = myParams["eventDate"];
+        alert(eventName + "; " + eventDate);
     }
 });
