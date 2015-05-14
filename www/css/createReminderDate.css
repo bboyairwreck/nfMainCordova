@@ -28,7 +28,7 @@ input.create {
 #leftPanel {
     padding-left: 1.6%;
     padding-right: 1.6%;
-    text-align: center;
+    text-align: left;
     width: 47%;
     height: 100%;
     float: left;
