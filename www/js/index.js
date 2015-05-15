@@ -103,3 +103,26 @@ $("#greeting").click(function() {
     var href = $(this).data("href");    // page location
     navWithParams(href);
 });
+
+$(".arrowIndex").click(function(){
+//$("#remindersWrap").scroll(function(){
+    var delta = 1;
+
+    if ($(this).attr("id") == "upArrowIndex"){
+       delta = -1;
+    }
+
+    var $remWrap = $('#remindersWrap');
+    var scrollTop = $remWrap.scrollTop();
+    scrollTop += (delta*500);
+
+    //$remWrap.scrollTop(scrollTop + (delta*200));
+
+    //scrollTop += 100;
+
+    $remWrap.animate({
+        scrollTop:scrollTop
+    },500);
+
+    //$("#dateTimeWrap h1").text(scrollTop);
+});
