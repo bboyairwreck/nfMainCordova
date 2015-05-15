@@ -123,6 +123,7 @@ header h2 {
     width: 66.66666666666666666%;
     float: right;
     background-color: #F4F4F4;
+    overflow: hidden;
 }
     
     #dateTimeWrap {
@@ -142,6 +143,10 @@ header h2 {
             font-size: 2.2em;
         }
 
+    #remindersAndArrows {
+        position: relative;
+        height: 100%;
+    }
 
     #remindersWrap {
 
@@ -151,12 +156,11 @@ header h2 {
         padding-left: 32px;
         padding-right: 101px;
 
-
         overflow: scroll;
-        position: relative;
     }
         .arrowIndex {
             position: fixed;
+            z-index: 500;
         }
 
         #upArrowIndex {
@@ -165,8 +169,8 @@ header h2 {
         }
 
         #downArrowIndex {
-            bottom: 19px;
             right: 8px;
+            top: 480px;
         }
 
 
