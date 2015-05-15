@@ -121,63 +121,81 @@ header h2 {
 #rightMainPanel {
     height: 100%;
     width: 66.66666666666666666%;
-    padding-right: 1.6%;
     float: right;
-
+    background-color: #F4F4F4;
 }
-    #rightMainPanel h1, #rightMainPanel h3 {
-        text-align: center;
-        font-size: 7em;
-        font-weight: normal;
+    
+    #dateTimeWrap {
+        background-color: #215C9F;
+        padding-top: 17px;
+        padding-bottom: 17px;
     }
 
-    #rightMainPanel h3 {
-        font-size: 1.5em;
-    }
+        #rightMainPanel h1, #rightMainPanel h3 {
+            text-align: center;
+            font-size: 6em;
+            font-weight: 600;
+            color: #ffffff;
+        }
+    
+        #rightMainPanel h3 {
+            font-size: 2.2em;
+        }
 
 
     #remindersWrap {
 
-        background-color: #F3F2F2;
         height: 73%;
-        width: 97%;
-        margin-left: 1.5%;
         /*width: 66.66666666666666666%;*/
-        padding-top: 20px;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-top: 19px;
+        padding-left: 32px;
+        padding-right: 101px;
 
-        margin-top: 10px;
 
         overflow: scroll;
-
+        position: relative;
     }
+        .arrowIndex {
+            position: fixed;
+        }
+
+        #upArrowIndex {
+            right: 8px;
+            top: 19px;
+        }
+
+        #downArrowIndex {
+            bottom: 19px;
+            right: 8px;
+        }
+
+
         .dayHeader {
             font-weight: normal;
             font-size: 2em;
-            color: #747474;
-            -webkit-transform: translateX(-15px);
-            transform: translateX(-15px);
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            background-color: #3498DB;
 
         }
 
         .reminderCardWrap {
             margin-bottom: 30px;
             background-color: #ffffff;
+            border: 1px solid #9B9B9B;
+            padding: 17px 35px 17px 35px;
         }
 
             .reminderTitle {
-                background-color: #00C2FF;
-                color: #ffffff;
+                color: #000000;
                 /*text-transform: uppercase;*/
-                padding: 10px;
                 font-weight: normal;
-                font-size: 2em;
+                font-size: 3em;
             }
 
             .reminderContent {
                 background-color: #ffffff;
-                padding: 10px;
             }
 
                 .reminderLine {
