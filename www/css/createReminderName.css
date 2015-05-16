@@ -5,11 +5,11 @@
     background-color: #ffffff;
 }
 
-header.create, form.create {
+header.create, div.create {
     height: 80%;
 }
 
-form.create {
+div.create {
     font-size: medium;
     padding-top: 60%;
 }

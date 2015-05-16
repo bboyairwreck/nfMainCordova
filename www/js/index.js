@@ -2,8 +2,17 @@ var patientID = 17;
 var needConfirmation = false;
 
 $(document).ready(function() {
+    //if (getParams() != null) {
+    //    needConfirmation = true;
+    //    params.pop();
+    //}
+    if (params.length > 0) {
+        needConfirmation = true;
+        params.pop();
+    }
     if (needConfirmation) {
         $("#confirmationBox").fadeIn(700).delay(2000).fadeOut(700);
+        needConfirmation = false;
     }
     fetchData();
 });

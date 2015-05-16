@@ -1,6 +1,5 @@
-/**
- * Created by eric on 5/14/15.
- */
+var personID = 46;
+
 !(function(){
     var eventName = "";
     var eventDate = "";
@@ -8,21 +7,38 @@
 
     $(document).ready(function() {
         myParams = getParams();
+        var eventDateString = "";
+        var eventTimeString = "";
 
         if (myParams != null) {
             eventName = myParams["eventName"];
-            var eventDateString = myParams["eventDate"];
-            var eventDateStringArr = dateFormat(eventDateString);
-            eventDate = eventDateStringArr["dateLine"];
-            var eventTimeString = myParams["eventTime"];
-            eventTime = timeFormat(eventTimeString);
+            eventDate = myParams["eventDate"];
+            var eventDateStringArr = dateFormat(eventDate);
+            eventDateString = eventDateStringArr["dateLine"];
+            eventTime = myParams["eventTime"];
+            eventTimeString = timeFormat(eventTime);
         }
-        $("#details").html("<p>" + eventName + "</p><p>" + eventDate + "</p><p>" + eventTime + "</p>");
+        $("#details").html("<p>" + eventName + "</p><p>" + eventDateString + "</p><p>" + eventTimeString + "</p>");
     });
 
     $("#createReminder").click(function(){
-
-
+        // ajax call to send in params
+        var url = "http://ericchee.com/neverforgotten/addEventReminder.php";
+        var datetime = eventDate + " " + eventTime;
+        $.ajax(url, {
+            dataType : "json",
+            data : {
+                'name': eventName,
+                'time': datetime,
+                'num': 0,
+                'type': 'minutes',
+                'id' : personID
+            },
+            success : ajaxSuccess,
+            error : ajaxError
+        });
+        params.pop();
+        params.pop();
         var href = $(this).data("href");    // page location
         navWithParams(href);
     });
@@ -34,4 +50,19 @@
     });
 }());
 
+function ajaxSuccess(data) {
+    if (data["message"] == "success") {
+        alert("Reminder was created!");
+    } else {
+        alert("Error: Reminder was NOT created");
+    }
+
+}
+
+function ajaxError( xhr, status, errorThrown ) {
+    alert(errorThrown);
+    console.log( "Error: " + errorThrown );
+    console.log( "Status: " + status );
+    console.dir( xhr );
+}
 

@@ -4,15 +4,16 @@
 
     $(document).ready(function() {
         myParams = getParams();
+        var eventDateString = "";
 
         if (myParams != null) {
             eventName = myParams["eventName"];
-            var eventDateString = myParams["eventDate"];
-            var eventDateStringArr = dateFormat(eventDateString);
-            eventDate = eventDateStringArr["dateLine"];
+            eventDate = myParams["eventDate"];
+            var eventDateStringArr = dateFormat(eventDate);
+            eventDateString = eventDateStringArr["dateLine"];
         }
 
-        $("#details").html("<p>" + eventName + "</p><p>" + eventDate + "</p>");
+        $("#details").html("<p>" + eventName + "</p><p>" + eventDateString + "</p>");
     });
 
     $("#nextTime").click(function(){
