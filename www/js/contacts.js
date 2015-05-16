@@ -32,7 +32,7 @@ function ajaxSuccess(data) {
         $contactImage = $newCard.find(".contactImg");
         $contactImage.attr('src', 'img/' + image);
 
-        $("#contactsWrap").prepend($newCard);
+        $("#contactsWrap").append($newCard);
     }
 
 
