@@ -11,7 +11,7 @@ header.create {
 
 header.create h1 {
     font-weight: normal;
-    font-size: 5em;
+    font-size: 4em;
     vertical-align: middle;
     padding-top: 25%;
 }
@@ -20,11 +20,11 @@ input.create {
     width: 85%;
 }
 
-#leftPanel {
+#leftCalPanel {
     padding-left: 1.6%;
     padding-right: 1.6%;
     text-align: left;
-    width: 47%;
+    width: 27%;
     height: 100%;
     float: left;
 }
@@ -34,9 +34,9 @@ input.create {
     text-align: center;
 }
 
-#rightPanel {
+#rightCalPanel {
     height: 100%;
-    width: 50%;
+    width: 70%;
     padding-right: 1.6%;
     float: right;
 
@@ -46,7 +46,7 @@ input.create {
 #calendarWrap {
     height: 80%;
     font-size: medium;
-    padding-top: 30%;
+    padding-top: 10%;
 }
 
 #monthYear {
@@ -59,7 +59,7 @@ input.create {
 
 #monthYear a {
     position: absolute;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .navigate-left {
@@ -73,9 +73,9 @@ input.create {
 td {
     text-align: center;
     vertical-align: middle;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: x-large;
     width: 14%;
 }
 
