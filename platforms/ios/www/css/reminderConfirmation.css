@@ -1,5 +1,16 @@
+header.remConf {
+    height: 20%;
+}
+
+#reminderConfirmation {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 #confirmationWrap {
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
 }
 
@@ -8,7 +19,35 @@
     padding-top: 50px;
 }
 
+#details {
+    padding-top: 10%;
+    width: 100%;
+}
+
+.reminderDetails {
+    padding-bottom: 15%;
+}
+
+#details p {
+    font-size: 24pt;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
 a {
     vertical-align: middle;
     text-align: center;
+}
+
+.navButtons {
+    bottom: 0;
+}
+
+.back {
+    float: left;
+}
+
+.next {
+    float: right;
 }

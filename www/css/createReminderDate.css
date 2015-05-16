@@ -34,6 +34,11 @@ input.create {
     float: left;
 }
 
+#details {
+    width: 100%;
+    text-align: center;
+}
+
 #rightPanel {
     height: 100%;
     width: 50%;

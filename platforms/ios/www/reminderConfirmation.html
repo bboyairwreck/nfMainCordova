@@ -27,13 +27,19 @@
     <!-- This is were the content of your app goes -->
     <div class="content" id="reminderConfirmation">
         <div id="confirmationWrap">
-            <header class="create">
-                <h1 id="confirmation">Reminder Created!</h1>
+            <header class="create remConf">
+                <h1 id="confirmation">Review Reminder</h1>
             </header>
 
-            <a href="index.html" data-transition="slide-in">
-                <button class="btn">Done</button>
-            </a>
+            <div id="details" class="reminderDetails"></div>
+
+            <div id="backTime" data-href="createReminderTime.html">
+                <img class="navButtons back" src="img/back.png" alt="Back">
+            </div>
+
+            <div id="createReminder" data-href="index.html">
+                <img class="navButtons next" src="img/create.png" alt="Create">
+            </div>
         </div>
     </div>
 </body>

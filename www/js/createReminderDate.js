@@ -11,6 +11,7 @@
         if (myParams != null) {
             eventName = myParams["eventName"];
         }
+        $("#details").html("<p>" + eventName + "</p>");
     });
 
     $("#nextDate").click(function() {
@@ -29,4 +30,14 @@
             alert("Please enter a time before continuing");
         }
     });
+
+    $("#backName").click(function() {
+        params.pop();
+        var href = $(this).data("href");
+        navWithParams(href);
+    });
 }());
+
+
+
+

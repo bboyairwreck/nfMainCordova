@@ -7,8 +7,12 @@
 
         if (myParams != null) {
             eventName = myParams["eventName"];
-            eventDate = myParams["eventDate"];
+            var eventDateString = myParams["eventDate"];
+            var eventDateStringArr = dateFormat(eventDateString);
+            eventDate = eventDateStringArr["dateLine"];
         }
+
+        $("#details").html("<p>" + eventName + "</p><p>" + eventDate + "</p>");
     });
 
     $("#nextTime").click(function(){
@@ -35,6 +39,11 @@
 
     });
 
+    $("#backDate").click(function() {
+        params.pop();
+        var href = $(this).data("href");
+        navWithParams(href);
+    });
 
 }());
 
