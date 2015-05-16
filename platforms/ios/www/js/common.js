@@ -60,3 +60,23 @@ function dateFormat(dateString) {
     return result;
 }
 
+function getMonthString(monthNum) {
+    return monthNames[monthNum - 1];
+}
+
+function getMonthNum(monthString) {
+    if($.inArray(monthString, monthNames)) {
+        var day = monthNames.indexOf(monthString) + 1;
+        if (day < 10) {
+            return "0" + day.toString();
+        } else {
+            return day.toString();
+        }
+    } else {
+        return null;
+    }
+}
+
+function daysInMonth(month, year) {
+    return new Date(year, month, 0).getDate();
+}

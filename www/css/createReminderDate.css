@@ -5,13 +5,8 @@
     background-color: #ffffff;
 }
 
-header.create, div.create {
+header.create {
     height: 80%;
-}
-
-div.create {
-    font-size: medium;
-    padding-top: 60%;
 }
 
 header.create h1 {
@@ -46,6 +41,70 @@ input.create {
     float: right;
 
     overflow: hidden;
+}
+
+#calendarWrap {
+    height: 80%;
+    font-size: medium;
+    padding-top: 30%;
+}
+
+#monthYear {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: white;
+    background-color: #C45249;
+}
+
+#monthYear a {
+    position: absolute;
+    padding-top: 5%;
+}
+
+.navigate-left {
+    left: 10%;
+}
+
+.navigate-right {
+    right: 10%;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-size: large;
+    width: 14%;
+}
+
+th {
+    width: 14%;
+    height: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+tr {
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+}
+
+.notMonth {
+    color: lightgrey;
+}
+
+.selected {
+    background-color: lightgrey;
+    opacity: .8;
+    border: grey solid 1px;
+}
+
+#today {
+    color: #C45249;
+    text-decoration-color: lightgrey;
+    /*border: black solid 1px;*/
 }
 
 .navButtons {

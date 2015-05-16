@@ -38,9 +38,24 @@
     </div>
 
     <div id="rightPanel">
-        <div class="create">
-            Pick a date:
-            <input id="inputEventDate" type="date" class="create" />
+        <div id="calendarWrap">
+            <ul class="table-view" id="calTitle">
+                <li class="table-view-divider" id="monthYear"></li>
+            </ul>
+            <table id="cal" style="width:100%">
+                <tr class="calHeader">
+                    <th>SUN</th>
+                    <th>MON</th>
+                    <th>TUES</th>
+                    <th>WED</th>
+                    <th>THS</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                </tr>
+            </table>
+
+
+            <!--<input id="inputEventDate" type="date" class="create" />-->
         </div>
 
         <div id="nextDate" data-href="createReminderTime.html">

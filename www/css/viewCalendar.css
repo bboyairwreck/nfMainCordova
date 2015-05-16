@@ -1,0 +1,80 @@
+td {
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+#cal td {
+    width: 14%;
+    font-weight: bold;
+    /*border-top: grey solid 1px;*/
+    /*border-bottom: grey solid 1px;*/
+}
+
+th {
+    width: 14%;
+    height: 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+tr {
+    border-top: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+}
+
+#calTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#monthYear {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    color: white;
+    background-color: #C45249;
+}
+
+.notMonth {
+    color: lightgrey;
+}
+
+.hasEvent {
+    text-decoration: underline;
+    text-decoration-color: lightgrey;
+}
+
+.selected {
+    background-color: lightgrey;
+    opacity: .8;
+    border: grey solid 1px;
+}
+
+#today {
+    color: #C45249;
+    text-decoration-color: lightgrey;
+    /*border: black solid 1px;*/
+}
+
+.noTask {
+    width: 100%;
+    font-size: 11pt;
+    color: grey;
+}
+
+.taskTime {
+    width: 14%;
+    font-size: 7pt;
+    border-right: lightgrey solid 1px;
+    color: grey;
+}
+
+.taskName {
+    width: 86%;
+    font-size: 11pt;
+    text-align: left;
+    padding-left: 3%;
+    color: grey;
+}

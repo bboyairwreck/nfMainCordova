@@ -51,11 +51,11 @@ var personID = 46;
 }());
 
 function ajaxSuccess(data) {
-    if (data["message"] == "success") {
-        alert("Reminder was created!");
-    } else {
-        alert("Error: Reminder was NOT created");
-    }
+    //if (data["message"] == "success") {
+    //    alert("Reminder was created!");
+    //} else {
+    //    alert("Error: Reminder was NOT created");
+    //}
 
 }
 
