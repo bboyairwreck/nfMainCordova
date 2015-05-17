@@ -15,6 +15,10 @@ div.create {
     width: 100%;
 }
 
+#createTime {
+    padding-top: 40%;
+}
+
 header.create h1 {
     font-weight: normal;
     font-size: 5em;
@@ -56,51 +60,57 @@ input.create {
     float: right;
 }
 
-#time {
-    width: 80%;
-}
-
 .timeInput {
     float: left;
 }
 
 #separator {
+    width: 20%;
     font-size: 8em;
+    text-align: center;
+    padding-top: 10%;
 }
 
 #hourInput {
-    width: 30%;
-    float: left;
+    width: 35%;
+    /*margin-right: 10%;*/
 }
 
 #minutesInput {
-    margin-left: 10%;
-    width: 60%;
-    float: right;
+    /*margin-left: 10%;*/
+    width: 45%;
+    /*float: right;*/
 }
 
-input.hours {
-    height: 7em;
-    width: 80%;
+label {
+    width: 100%;
+    text-align: center;
 }
 
-input.minutes {
-    height: 7em;
-    width: 80%;
+input.numTime {
+    height: 1.5em;
+    width: 100%;
+    clear: right;
+    font-size: 6em;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    text-align: center;
 }
 
 #setTime {
-    padding-top: 60%;
-    width: 100%;
+    /*padding-top: 60%;*/
+    width: 90%;
 }
 
 #timeButtons {
-    padding-top: 5%;
-    width: 100%;
+    /*padding-top: 5%;*/
+    padding-left: 2%;
+    /*margin-right: auto;*/
+    /*width: 100%;*/
 }
 
 #timeButtons img {
-    padding: 10px;
+    padding: 40px;
 }
 
 /* Landscape layout (with min-width) */

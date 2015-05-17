@@ -38,26 +38,27 @@
     </div>
 
     <div id="rightPanel">
-        <div class="create">
-            <!--<div id="setTime">-->
-                <!--<div id="hourInput" class="timeInput">-->
-                    <!--<input type="text" class="hours" />-->
-                    <!--<label>HOURS</label>-->
-                <!--</div>-->
-                <!--<div id="separator" class="timeInput">:</div>-->
-                <!--<div id="minutesInput" class="timeInput">-->
-                    <!--<input type="text" class="minutes" />-->
-                    <!--<label>MINUTES</label>-->
-                <!--</div>-->
-            <!--</div>-->
+        <div class="create" id="createTime">
+            <div id="setTime">
+                <div id="hourInput" class="timeInput">
+                    <input type="number" id="hourNum" min="1" max="12" step="1" class="numTime" />
+                    <label>HOURS</label>
+                </div>
+                <div id="separator" class="timeInput">:</div>
+                <div id="minutesInput" class="timeInput">
+                    <input type="number" id="minuteNum" min="0" max="59" step="1" class="numTime" />
+                    <label>MINUTES</label>
+                </div>
+                <div id="timeButtons" class="timeInput">
+                    <img src="img/am_yellow.png" alt="AM" id="amButton" />
+                    <img src="img/pm_yellow.png" alt="PM" id="pmButton" />
+                </div>
+            </div>
 
 
-            <!--<div id="timeButtons" class="timeInput">-->
-                <!--<img src="img/am.png" alt="AM" />-->
-                <!--<img src="img/pm.png" alt="PM" />-->
-            <!--</div>-->
-            Pick a date:
-            <input id="inputEventTime" type="time" class="create" />
+
+            <!--Pick a date:-->
+            <!--<input id="inputEventTime" type="time" class="create" />-->
         </div>
 
         <div id="nextTime" data-href="reminderConfirmation.html">

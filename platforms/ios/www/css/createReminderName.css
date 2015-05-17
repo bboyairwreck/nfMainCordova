@@ -14,6 +14,10 @@ div.create {
     padding-top: 60%;
 }
 
+#createName {
+    padding-top: 50%;
+}
+
 header.create h1 {
     font-weight: normal;
     font-size: 5em;
@@ -41,6 +45,21 @@ input.create {
     float: right;
 
     overflow: hidden;
+}
+
+#inputEventName {
+    height: 1.5em;
+    width: 90%;
+    clear: right;
+    font-size: 3em;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    /*text-align: center;*/
+}
+
+label {
+    width: 100%;
+    text-align: center;
 }
 
 .navButtons {
