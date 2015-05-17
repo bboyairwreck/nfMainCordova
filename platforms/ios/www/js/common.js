@@ -36,7 +36,7 @@ function datetimeFormat(datetime) {
 }
 
 var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var dayNames = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 var dayNames_abbrev = ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"];
 
 function dateFormat(dateString) {

@@ -1,5 +1,6 @@
 var patientID = 17;
 var needConfirmation = false;
+var syncTimer = null;
 
 $(document).ready(function() {
     //if (getParams() != null) {
@@ -14,8 +15,16 @@ $(document).ready(function() {
         $("#confirmationBox").fadeIn(700).delay(2000).fadeOut(700);
         needConfirmation = false;
     }
-    //fetchPatient();
+    var date = getCurDateString();
+    var dateString = dateFormat(date);
+    $("#date").html(dateString["dayName"] + ", " + dateString["dateLine"]);
+    fetchPatient();
+    setTime();
     fetchData();
+    syncTimer = setInterval(function(){
+        setTime();
+        fetchData();
+    }, 30000);
 });
 
 function fetchPatient() {
@@ -32,7 +41,33 @@ function fetchPatient() {
 }
 
 function setupPatient(data) {
+    var firstName = data[0]["PersonFName"];
+    $("#intro").html("Hello " + firstName);
+}
 
+function setTime() {
+    var d = new Date();
+    var a_p = "";
+    var curr_hour = d.getHours();
+    if (curr_hour < 12) {
+        a_p = "AM";
+    } else {
+        a_p = "PM";
+    }
+    if (curr_hour == 0) {
+        curr_hour = 12;
+    }
+    if (curr_hour > 12) {
+        curr_hour = curr_hour - 12;
+    }
+    var time = curr_hour + ":";
+    var curr_min = d.getMinutes()
+    if (curr_min < 10) {
+        time = time + "0" + curr_min + " " + a_p;
+    } else {
+        time = time + curr_min + " " + a_p;
+    }
+    $("#time").html(time);
 }
 
 function fetchData() {
@@ -145,17 +180,6 @@ function ajaxError( xhr, status, errorThrown ) {
     console.log("Status: " + status);
     console.dir(xhr);
 }
-
-var syncTimer = null;
-$("#callButton").click(function() {
-
-
-    syncTimer = setInterval(function(){
-
-        fetchData();
-    }, 1000);
-
-});
 
 $(".actionButton").on("touchstart", function() {
    $(this).css("-webkit-transform", "scale(.96)");
