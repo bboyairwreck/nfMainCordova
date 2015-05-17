@@ -184,17 +184,6 @@ function ajaxError( xhr, status, errorThrown ) {
     ajaxSuccess(data);
 }
 
-//var syncTimer = null;
-//$("#callButton").click(function() {
-//
-//
-//    syncTimer = setInterval(function(){
-//
-//        fetchData();
-//    }, 1000);
-//
-//});
-
 $(".actionButton").on("touchstart", function() {
    $(this).css("-webkit-transform", "scale(.96)");
 });
