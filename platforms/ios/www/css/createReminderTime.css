@@ -12,6 +12,7 @@ header.create, div.create {
 div.create {
     font-size: medium;
     padding-top: 60%;
+    width: 100%;
 }
 
 header.create h1 {
@@ -53,6 +54,53 @@ input.create {
 
 .next {
     float: right;
+}
+
+#time {
+    width: 80%;
+}
+
+.timeInput {
+    float: left;
+}
+
+#separator {
+    font-size: 8em;
+}
+
+#hourInput {
+    width: 30%;
+    float: left;
+}
+
+#minutesInput {
+    margin-left: 10%;
+    width: 60%;
+    float: right;
+}
+
+input.hours {
+    height: 7em;
+    width: 80%;
+}
+
+input.minutes {
+    height: 7em;
+    width: 80%;
+}
+
+#setTime {
+    padding-top: 60%;
+    width: 100%;
+}
+
+#timeButtons {
+    padding-top: 5%;
+    width: 100%;
+}
+
+#timeButtons img {
+    padding: 10px;
 }
 
 /* Landscape layout (with min-width) */

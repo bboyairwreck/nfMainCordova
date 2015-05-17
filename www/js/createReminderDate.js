@@ -35,7 +35,7 @@
     });
 
     $("#nextDate").click(function() {
-        var evDate = $("td.selected").attr('data-date');
+        var evDate = $("td.selected").data("date");
 
         if (evDate) {
             // add param data
@@ -47,7 +47,7 @@
             var href = $(this).data("href");    // page location
             navWithParams(href);
         } else {
-            alert("Please enter a time before continuing");
+            alert("Please select a date before continuing");
         }
     });
 

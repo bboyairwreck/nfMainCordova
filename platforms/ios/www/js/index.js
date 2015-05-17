@@ -14,8 +14,26 @@ $(document).ready(function() {
         $("#confirmationBox").fadeIn(700).delay(2000).fadeOut(700);
         needConfirmation = false;
     }
+    //fetchPatient();
     fetchData();
 });
+
+function fetchPatient() {
+    var url = "http://ericchee.com/neverforgotten/getPatient.php";
+
+    $.ajax(url, {
+        dataType : "json",
+        data : {
+            'n' : patientID
+        },
+        success : setupPatient,
+        error : ajaxError
+    });
+}
+
+function setupPatient(data) {
+
+}
 
 function fetchData() {
     var url = "http://ericchee.com/neverforgotten/getEvents_Patient.php";

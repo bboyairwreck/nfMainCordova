@@ -55,6 +55,7 @@ input.create {
     text-align: center;
     color: white;
     background-color: #C45249;
+    font-size: 2em;
 }
 
 #monthYear a {
