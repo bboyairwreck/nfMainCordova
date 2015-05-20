@@ -17,7 +17,8 @@ $(document).ready(function() {
     }
     var date = getCurDateString();
     var dateString = dateFormat(date);
-    $("#date").html(dateString["dayName"] + ", " + dateString["dateLine"]);
+    $("#date").text(dateString["dayName"] + ", " + dateString["dateLine"]);
+    $("#date").css('visibility', 'visible');
     fetchPatient();
     setTime();
     fetchData();
@@ -67,7 +68,8 @@ function setTime() {
     } else {
         time = time + curr_min + " " + a_p;
     }
-    $("#time").html(time);
+    $("#time").text(time);
+    $('#time').css('visibility', 'visible');
 }
 
 function fetchData() {

@@ -115,7 +115,7 @@ function calendar(month, year) {
     });
 
     // date cell click function
-    $("#cal td").click(function() {
+    $("#cal td").on("touchstart", function() {
         $("td.selected").removeClass("selected");
         $(this).addClass("selected");
         var monthYear = $("#monthYear").text();
