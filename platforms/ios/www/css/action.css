@@ -1,0 +1,31 @@
+
+html, body, .content {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#actionTitle {
+    font-size: 7em;
+}
+
+#actionSubtitle {
+    font-size: 6em;
+    margin-top: 15%;
+}
+    #actionViewAllImg {
+        margin-left: 50px;
+    }
+
+#actionTitle, #actionSubtitle {
+    text-align: center;
+    font-weight: normal;
+}
+
+#actionTitle {
+    margin-top: 15%;
+}
+
+#actionTouchWrap {
+    margin-top: 3%;
+    text-align: center;
+}

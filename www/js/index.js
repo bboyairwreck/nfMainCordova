@@ -184,14 +184,6 @@ function ajaxError( xhr, status, errorThrown ) {
     ajaxSuccess(data);
 }
 
-$(".actionButton").on("touchstart", function() {
-   $(this).css("-webkit-transform", "scale(.96)");
-});
-
-$("body").on("touchend", function() {
-    $(".actionButton").css("-webkit-transform", "scale(1.0)");
-});
-
 $("#sosButton").click(function() {
     clearInterval(syncTimer);
 });
@@ -228,4 +220,13 @@ $(".arrowIndex").click(function(){
     },500);
 
     //$("#dateTimeWrap h1").text(scrollTop);
+});
+
+// Button Animation
+$(".btnAnim").on("touchstart", function() {
+    $(this).css("-webkit-transform", "scale(.96)");
+});
+
+$("body").on("touchend", function() {
+    $(".btnAnim").css("-webkit-transform", "scale(1.0)");
 });

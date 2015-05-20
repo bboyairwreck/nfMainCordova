@@ -1,0 +1,27 @@
+
+html, body, .content {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#welcomeTitle {
+    font-size: 7em;
+}
+
+#welcomeSubtitle {
+    font-size: 6em;
+}
+
+#welcomeTitle, #welcomeSubtitle {
+    text-align: center;
+    font-weight: normal;
+}
+
+#welcomeTitle {
+    margin-top: 15%;
+}
+
+#touchWrap {
+    margin-top: 3%;
+    text-align: center;
+}

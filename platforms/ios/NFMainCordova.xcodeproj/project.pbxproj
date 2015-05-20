@@ -10,14 +10,17 @@
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		2FA28087BC495CFB6B15FD84 /* action.html in Resources */ = {isa = PBXBuildFile; fileRef = 2FA28001EF1B82D3C5F60FA9 /* action.html */; };
 		2FA285B0F8E44C08761A32E2 /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA288D292BA0CF6E83E5DC9 /* call.png */; };
 		2FA285CC5B969ECAFE32C3C5 /* viewAllReminders.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA285598E6F759DE93659BC /* viewAllReminders.png */; };
 		2FA286EBB6480E5BC263B5E6 /* createReminder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA288C4CA56F0F726C1B5A0 /* createReminder.png */; };
 		2FA28798D1D6A9AF2F1308F4 /* createReminder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA287D1345B8610542D6FB6 /* createReminder.png */; };
 		2FA28827B02D7F650DE9D1E1 /* sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA280F854ED46AAB99A1216 /* sos.png */; };
 		2FA2895C3F3F8F86119F43FE /* viewAllReminders.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2885FDE21ACCCF25AC592 /* viewAllReminders.png */; };
+		2FA28A2741F882FCDC5734BC /* welcome.css in Resources */ = {isa = PBXBuildFile; fileRef = 2FA289D6A066027E6BC13AA3 /* welcome.css */; };
 		2FA28BECC1836DD9A11681E2 /* sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA28E60A3A0F739965E5524 /* sos.png */; };
 		2FA28F5384F0B9192F31E4CB /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA28827EBAB3CFFE4DD9E3F /* call.png */; };
+		2FA28FC518AC4E7EBD7B2265 /* action.css in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2806F80D063A81C197613 /* action.css */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
@@ -73,6 +76,8 @@
 		1D6058910D05DD3D006BFB54 /* NFMainCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFMainCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FA28001EF1B82D3C5F60FA9 /* action.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = action.html; path = ../../www/action.html; sourceTree = "<group>"; };
+		2FA2806F80D063A81C197613 /* action.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = action.css; path = ../../www/css/action.css; sourceTree = "<group>"; };
 		2FA280F854ED46AAB99A1216 /* sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sos.png; sourceTree = "<group>"; };
 		2FA285598E6F759DE93659BC /* viewAllReminders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewAllReminders.png; sourceTree = "<group>"; };
 		2FA287D1345B8610542D6FB6 /* createReminder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createReminder.png; sourceTree = "<group>"; };
@@ -80,6 +85,7 @@
 		2FA2885FDE21ACCCF25AC592 /* viewAllReminders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewAllReminders.png; sourceTree = "<group>"; };
 		2FA288C4CA56F0F726C1B5A0 /* createReminder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createReminder.png; sourceTree = "<group>"; };
 		2FA288D292BA0CF6E83E5DC9 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
+		2FA289D6A066027E6BC13AA3 /* welcome.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = welcome.css; path = ../../www/css/welcome.css; sourceTree = "<group>"; };
 		2FA28E60A3A0F739965E5524 /* sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sos.png; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
@@ -179,6 +185,9 @@
 				2FA285598E6F759DE93659BC /* viewAllReminders.png */,
 				2FA288D292BA0CF6E83E5DC9 /* call.png */,
 				2FA288C4CA56F0F726C1B5A0 /* createReminder.png */,
+				2FA289D6A066027E6BC13AA3 /* welcome.css */,
+				2FA28001EF1B82D3C5F60FA9 /* action.html */,
+				2FA2806F80D063A81C197613 /* action.css */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -391,6 +400,9 @@
 				2FA285CC5B969ECAFE32C3C5 /* viewAllReminders.png in Resources */,
 				2FA285B0F8E44C08761A32E2 /* call.png in Resources */,
 				2FA286EBB6480E5BC263B5E6 /* createReminder.png in Resources */,
+				2FA28A2741F882FCDC5734BC /* welcome.css in Resources */,
+				2FA28087BC495CFB6B15FD84 /* action.html in Resources */,
+				2FA28FC518AC4E7EBD7B2265 /* action.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
