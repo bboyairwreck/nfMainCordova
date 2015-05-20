@@ -1,8 +1,18 @@
+#taskPanel {
+    width: 40%;
+    height: 100%;
+}
+
+#calPanel {
+    width: 60%;
+    float: right;
+}
+
 td {
     text-align: center;
     vertical-align: middle;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 23px;
+    padding-bottom: 23px;
 }
 
 #cal td {
@@ -24,17 +34,34 @@ tr {
     border-bottom: lightgrey solid 1px;
 }
 
-#calTitle {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+/*.calHeader {*/
+    /*margin-top: 0;*/
+    /*margin-bottom: 0;*/
+/*}*/
 
-#monthYear {
+.calHeader {
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
     color: white;
-    background-color: #C45249;
+    background-color: #4A90E2;
+}
+
+#monYr a {
+    position: absolute;
+    padding-top: 3%;
+}
+
+.navigate-left {
+    left: 10%;
+}
+
+.navigate-right {
+    right: 10%;
+}
+
+#monthDay {
+    text-align: left;
 }
 
 .notMonth {

@@ -3,23 +3,23 @@
  */
 $(document).ready(function() {
     var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1;
-    var yyyy = today.getFullYear();
-    if (dd < 10) {
-        dd = "0" + dd;
-    }
+    //var dd = today.getDate();
+    //var mm = today.getMonth() + 1;
+    //var yyyy = today.getFullYear();
+    //if (dd < 10) {
+    //    dd = "0" + dd;
+    //}
     // setup calendar for current month
-    calendar(mm, yyyy);
-    var $month = mm;
-    if (mm < 10) {
-        $month = "0" + mm;
-    }
-    // adds the selected class and id=today for current date and returns reminders
-    var todayDate = yyyy + "-" + $month + "-" + dd;
-    $("td[data-date='" + todayDate + "']").attr('id', 'today');
-    $("td[data-date='" + todayDate + "']").addClass("selected");
-    getEvents(todayDate);
+    calendar(today.getMonth() + 1, today.getFullYear());
+    //var $month = mm;
+    //if (mm < 10) {
+    //    $month = "0" + mm;
+    //}
+    //// adds the selected class and id=today for current date and returns reminders
+    //var todayDate = yyyy + "-" + $month + "-" + dd;
+    //$("td[data-date='" + todayDate + "']").attr('id', 'today');
+    //$("td[data-date='" + todayDate + "']").addClass("selected");
+    //getEvents(todayDate);
 });
 
 function calendar(month, year) {
@@ -65,10 +65,28 @@ function calendar(month, year) {
     // updates the calendar Title with month year
     var monthString = getMonthString(month);
     var calTitle = monthString + " " + year;
-    $("#monthYear").html("<a class='navigate-left'></a>"+calTitle+"<a class='navigate-right'></a>");
+    $("#monYr").html("<a class='navigate-left'></a>"+calTitle+"<a class='navigate-right'></a>");
 
     // adds class hasEvent
     setupCalendar(monthYear);
+
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = "0" + dd;
+    }
+    var $month = mm;
+    if (mm < 10) {
+        $month = "0" + mm;
+    }
+
+    // adds the selected class and id=today for current date and returns reminders
+    var todayDate = yyyy + "-" + $month + "-" + dd;
+    $("td[data-date='" + todayDate + "']").attr('id', 'today');
+    $("td[data-date='" + todayDate + "']").addClass("selected");
+    getEvents(todayDate);
 
     // navigation
     $("a.navigate-left").click(function() {

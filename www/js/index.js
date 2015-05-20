@@ -23,8 +23,8 @@ $(document).ready(function() {
     fetchData();
     syncTimer = setInterval(function(){
         setTime();
-        fetchData();
-    }, 30000);
+        //fetchData();
+    }, 60000);
 });
 
 function fetchPatient() {

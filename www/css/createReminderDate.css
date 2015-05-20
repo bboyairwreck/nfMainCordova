@@ -39,7 +39,6 @@ input.create {
     width: 70%;
     padding-right: 1.6%;
     float: right;
-
     overflow: hidden;
 }
 
@@ -54,7 +53,7 @@ input.create {
     padding-bottom: 1em;
     text-align: center;
     color: white;
-    background-color: #C45249;
+    background-color: #4A90E2;
     font-size: 2em;
 }
 

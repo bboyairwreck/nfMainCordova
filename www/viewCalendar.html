@@ -26,31 +26,36 @@
 
         <!-- This is were the content of your app goes -->
         <div class="content" id="viewCalendar">
+            <header>
+                <h1>My Calendar</h1>
+            </header>
 
-            <ul class="table-view" id="calTitle">
-                <li class="table-view-divider" id="monthYear"></li>
-            </ul>
-            <table id="cal" style="width:100%">
-                <tr class="calHeader">
-                    <th>S</th>
-                    <th>M</th>
-                    <th>T</th>
-                    <th>W</th>
-                    <th>T</th>
-                    <th>F</th>
-                    <th>S</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-            <table id="taskTable" style="width:100%">
-            </table>
+            <div id="calPanel">
+                <ul class="table-view">
+                    <li class="table-view-divider" id="monYr"></li>
+                </ul>
+                <table id="cal" style="width:100%">
+                    <tr>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>T</th>
+                        <th>W</th>
+                        <th>T</th>
+                        <th>F</th>
+                        <th>S</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="taskPanel">
+                <ul class="table-view">
+                    <li class="table-view-divider" id="monDay">May 20</li>
+                </ul>
+                <table id="taskTable" style="width:100%"></table>
+
+                <a href="index.html" data-transition="slide-in">
+                    <img class="navButtons back" src="img/back.png" alt="Back">
+                </a>
+            </div>
 
             <table id="taskTemplate" style="display: none;">
                 <tr class="taskCard">
