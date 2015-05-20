@@ -26,29 +26,29 @@
 
         <!-- This is were the content of your app goes -->
         <div class="content" id="viewCalendar">
-            <header>
-                <h1>My Calendar</h1>
+            <header class="viewCal">
+                <h1 class="viewCal">My Calendar</h1>
             </header>
 
             <div id="calPanel">
                 <ul class="table-view">
-                    <li class="table-view-divider calHeader" id="monYr"></li>
+                    <li class="table-view-divider" id="monYr"></li>
                 </ul>
                 <table id="cal" style="width:100%">
-                    <tr>
-                        <th>S</th>
-                        <th>M</th>
-                        <th>T</th>
-                        <th>W</th>
-                        <th>T</th>
-                        <th>F</th>
-                        <th>S</th>
+                    <tr class="calHeader">
+                        <th>SUN</th>
+                        <th>MON</th>
+                        <th>TUES</th>
+                        <th>WED</th>
+                        <th>THS</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
                     </tr>
                 </table>
             </div>
             <div id="taskPanel">
                 <ul class="table-view">
-                    <li class="table-view-divider calHeader" id="monthDay">May 20</li>
+                    <li class="table-view-divider" id="monDay">May 20</li>
                 </ul>
                 <table id="taskTable" style="width:100%"></table>
 

@@ -26,8 +26,8 @@
             <file leaf-file-name="createReminderDate.css" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/../../www/css/createReminderDate.css">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state vertical-scroll-proportion="0.71900827" vertical-offset="525" max-vertical-offset="1950">
-                    <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="70" selection-end-column="1" />
+                  <state vertical-scroll-proportion="0.1983471" vertical-offset="690" max-vertical-offset="1950">
+                    <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
                     <folding />
                   </state>
                 </provider>
@@ -38,7 +38,7 @@
       </content>
     </window>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_4633e7d0e6fc4408348a6bc5769eebbca581883f" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_iPad_Air_8.3_x86_64_2" />
   <component name="FavoritesManager">
     <favorites_list name="NFMainCordova" />
   </component>
@@ -76,25 +76,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewCalendar.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="viewCalendar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../www/viewCalendar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3545611" vertical-offset="304" max-vertical-offset="1110">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state vertical-scroll-proportion="-13.583333" vertical-offset="349" max-vertical-offset="1110">
+              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
               <folding>
-                <element signature="e#1575#1593#0" expanded="true" />
-                <element signature="e#2143#2161#0" expanded="true" />
-                <element signature="e#2395#2417#0" expanded="true" />
+                <element signature="e#1607#1625#0" expanded="true" />
+                <element signature="e#2208#2226#0" expanded="true" />
+                <element signature="e#2460#2482#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewCalendar.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="viewCalendar.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../www/css/viewCalendar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1680">
-              <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.32231405" vertical-offset="870" max-vertical-offset="1905">
+              <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -123,8 +123,8 @@
       <file leaf-file-name="createReminderDate.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../www/createReminderDate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.3333335" vertical-offset="454" max-vertical-offset="1035">
-              <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
+            <state vertical-scroll-proportion="-10.458333" vertical-offset="424" max-vertical-offset="1035">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="53" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -394,11 +394,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30559346" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30555555" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18604651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12083333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12083333" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -768,39 +768,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../www/createReminderDate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3333335" vertical-offset="454" max-vertical-offset="1035">
-          <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../www/css/createReminderDate.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71900827" vertical-offset="525" max-vertical-offset="1950">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="70" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.1983471" vertical-offset="690" max-vertical-offset="1950">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../www/css/viewCalendar.css">
+    <entry file="file://$PROJECT_DIR$/../../www/createReminderDate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1680">
-          <caret line="46" column="30" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        <state vertical-scroll-proportion="-10.458333" vertical-offset="424" max-vertical-offset="1035">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="53" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../www/viewCalendar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3545611" vertical-offset="304" max-vertical-offset="1110">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state vertical-scroll-proportion="-13.583333" vertical-offset="349" max-vertical-offset="1110">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
-            <element signature="e#1575#1593#0" expanded="true" />
-            <element signature="e#2143#2161#0" expanded="true" />
-            <element signature="e#2395#2417#0" expanded="true" />
+            <element signature="e#1607#1625#0" expanded="true" />
+            <element signature="e#2208#2226#0" expanded="true" />
+            <element signature="e#2460#2482#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../www/css/viewCalendar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32231405" vertical-offset="870" max-vertical-offset="1905">
+          <caret line="71" column="1" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

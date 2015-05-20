@@ -1,6 +1,18 @@
+header.viewCal {
+    width: 100%;
+}
+
+h1.viewCal {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #4A90E2;
+}
+
 #taskPanel {
     width: 40%;
     height: 100%;
+    border-right: solid 1px black;
 }
 
 #calPanel {
@@ -34,18 +46,17 @@ tr {
     border-bottom: lightgrey solid 1px;
 }
 
-/*.calHeader {*/
-    /*margin-top: 0;*/
-    /*margin-bottom: 0;*/
-/*}*/
-
-.calHeader {
+#monYr, #monDay {
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
-    color: white;
-    background-color: #4A90E2;
+    margin-bottom: 0;
+    font-size: 2em;
 }
+
+/*#monYr {*/
+    /*font-size: 2em;*/
+/*}*/
 
 #monYr a {
     position: absolute;
@@ -60,7 +71,7 @@ tr {
     right: 10%;
 }
 
-#monthDay {
+#monDay {
     text-align: left;
 }
 
@@ -83,6 +94,10 @@ tr {
     color: #C45249;
     text-decoration-color: lightgrey;
     /*border: black solid 1px;*/
+}
+
+#taskTable {
+    height: 60%;
 }
 
 .noTask {
