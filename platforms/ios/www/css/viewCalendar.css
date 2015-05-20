@@ -1,5 +1,6 @@
 header.viewCal {
     width: 100%;
+    height: 10%;
 }
 
 h1.viewCal {
@@ -7,12 +8,16 @@ h1.viewCal {
     text-align: center;
     color: white;
     background-color: #4A90E2;
+    height: 100%;
+    padding-top: 1%;
 }
 
 #taskPanel {
     width: 40%;
-    height: 100%;
+    height: 90%;
     border-right: solid 1px black;
+    /*padding-left: 1.6%;*/
+    /*padding-right: 1.6%;*/
 }
 
 #calPanel {
@@ -97,7 +102,7 @@ tr {
 }
 
 #taskTable {
-    height: 60%;
+    height: 67%;
 }
 
 .noTask {
@@ -119,4 +124,8 @@ tr {
     text-align: left;
     padding-left: 3%;
     color: grey;
+}
+
+.calBack {
+    padding-left: 3%;
 }
