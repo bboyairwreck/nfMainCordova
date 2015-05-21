@@ -15,23 +15,23 @@
 
         // in right panel, setup calendar
         var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1;
-        var yyyy = today.getFullYear();
-        if (dd < 10) {
-            dd = "0" + dd;
-        }
+        //var dd = today.getDate();
+        //var mm = today.getMonth() + 1;
+        //var yyyy = today.getFullYear();
+        //if (dd < 10) {
+        //    dd = "0" + dd;
+        //}
 
         // setup calendar for current month
-        calendar(mm, yyyy);
+        calendar(today.getMonth() + 1, today.getFullYear());
 
-        var $month = mm;
-        if (mm < 10) {
-            $month = "0" + mm;
-        }
-        // adds the selected class and id=today for current date and returns reminders
-        var todayDate = yyyy + "-" + $month + "-" + dd;
-        $("td[data-date='" + todayDate + "']").attr('id', 'today');
+        //var $month = mm;
+        //if (mm < 10) {
+        //    $month = "0" + mm;
+        //}
+        //// adds the selected class and id=today for current date and returns reminders
+        //var todayDate = yyyy + "-" + $month + "-" + dd;
+        //$("td[data-date='" + todayDate + "']").attr('id', 'today');
     });
 
     $("#nextDate").click(function() {
@@ -104,6 +104,22 @@ function calendar(month, year) {
     var calTitle = monthString + " " + year;
     $("#monthYear").html("<a class='navigate-left'></a>"+calTitle+"<a class='navigate-right'></a>");
 
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth() + 1;
+    var yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = "0" + dd;
+    }
+    var $month = mm;
+    if (mm < 10) {
+        $month = "0" + mm;
+    }
+
+    // adds the selected class and id=today for current date and returns reminders
+    var todayDate = yyyy + "-" + $month + "-" + dd;
+    $("td[data-date='" + todayDate + "']").attr('id', 'today');
+
     // navigation
     $("a.navigate-left").click(function() {
         if (month == 1) {
@@ -131,7 +147,8 @@ function calendar(month, year) {
     });
 
     // date cell click function
-    $("#cal td").click(function() {
+
+    $("#cal td").on("touchstart", function() {
         $("td.selected").removeClass("selected");
         $(this).addClass("selected");
     });

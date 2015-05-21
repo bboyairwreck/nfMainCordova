@@ -102,30 +102,37 @@ tr {
 }
 
 #taskTable {
-    height: 67%;
+    /*height: 60%;*/
+    overflow: scroll;
 }
 
 .noTask {
     width: 100%;
-    font-size: 11pt;
+    font-size: 20pt;
     color: grey;
 }
 
-.taskTime {
-    width: 14%;
-    font-size: 7pt;
+.calTaskCard, .noTask {
+    height: 110px;
+}
+
+.calTaskTime {
+    width: 25%;
+    font-size: 14pt;
     border-right: lightgrey solid 1px;
-    color: grey;
+    color: #4A90E2;
 }
 
-.taskName {
-    width: 86%;
-    font-size: 11pt;
+.calTaskName {
+    width: 75%;
+    font-size: 20pt;
     text-align: left;
     padding-left: 3%;
     color: grey;
 }
 
 .calBack {
-    padding-left: 3%;
+    left: 5%;
+    bottom: 2%;
+    position: absolute;
 }

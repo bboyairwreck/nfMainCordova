@@ -70,64 +70,68 @@ function calendar(month, year) {
     // adds class hasEvent
     setupCalendar(monthYear);
 
+    // get today's date
     var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1;
-    var yyyy = today.getFullYear();
-    if (dd < 10) {
-        dd = "0" + dd;
+    var todayDay = today.getDate();
+    var todayMonth = today.getMonth() + 1;
+    var todayYear = today.getFullYear();
+    if (todayDay < 10) {
+        todayDay = "0" + todayDay;
     }
-    var $month = mm;
-    if (mm < 10) {
-        $month = "0" + mm;
+    if (todayMonth < 10) {
+        todayMonth = "0" + todayMonth;
     }
 
     // adds the selected class and id=today for current date and returns reminders
-    var todayDate = yyyy + "-" + $month + "-" + dd;
+    var todayDate = todayYear + "-" + todayMonth + "-" + todayDay;
     $("td[data-date='" + todayDate + "']").attr('id', 'today');
     $("td[data-date='" + todayDate + "']").addClass("selected");
-    getEvents(todayDate);
+    if (mm == todayMonth) {
+        $("#monDay").html(getMonthString(month) + " " + today.getDate());
+        getEvents(todayDate);
+    }
 
     // navigation
     $("a.navigate-left").click(function() {
+        $("#taskTable").empty();
+        var $noTask = "<tr><td class='noTask'>No Events</td></tr>";
+        $("#taskTable").prepend($noTask);
         if (month == 1) {
             month = 12;
             year = year - 1;
         } else {
             month = month - 1;
         }
+        $("#monDay").html(getMonthString(month));
         calendar(month, year);
+    });
+    $("a.navigate-right").click(function() {
         $("#taskTable").empty();
         var $noTask = "<tr><td class='noTask'>No Events</td></tr>";
         $("#taskTable").prepend($noTask);
-    });
-    $("a.navigate-right").click(function() {
         if (month == 12) {
             month = 1;
             year = year + 1;
         } else {
             month = month + 1;
         }
+        $("#monDay").html(getMonthString(month));
         calendar(month, year);
-        $("#taskTable").empty();
-        var $noTask = "<tr><td class='noTask'>No Events</td></tr>";
-        $("#taskTable").prepend($noTask);
     });
 
     // date cell click function
     $("#cal td").on("touchstart", function() {
         $("td.selected").removeClass("selected");
         $(this).addClass("selected");
-        var monthYear = $("#monthYear").text();
-        var monYrArr = monthYear.split(" ");
-        var month = getMonthNum(monYrArr[0]);
         var day = $(this).text();
-        if (parseInt(day) < 10) {
-            day = "0" + day;
+        var monthStr = getMonthString(month);
+        $("#monDay").html(monthStr + " " + day);
+        var date = parseInt(day);
+        if (date < 10) {
+            date = "0" + date;
         }
-        var year = monYrArr[1];
-        var date = year + "-" + month + "-" + day;
-        getEvents(date);
+        var currDate = monthYear + "-" + date;
+        getEvents(currDate);
     });
 }
 
@@ -169,15 +173,15 @@ function ajaxSuccess(data) {
     $("#taskTable").empty();
     if (data.length > 0) {
         for (var i = 0; i < data.length; i++){
-            var $newTask = $("#taskTemplate .taskCard").clone();
+            var $newTask = $("#taskTemplate .calTaskCard").clone();
             var taskName = data[i]["EventTitle"];
             var taskDateTime = data[i]["EventTime"];
             var taskDateTimeArr = datetimeFormat(taskDateTime);
             var taskTime = taskDateTimeArr["time"];
             var taskTimeFormatted = timeFormat(taskTime);
-            $time = $newTask.find(".taskTime");
+            $time = $newTask.find(".calTaskTime");
             $time.text(taskTimeFormatted);
-            $name = $newTask.find(".taskName");
+            $name = $newTask.find(".calTaskName");
             $name.html(taskName);
             $("#taskTable").prepend($newTask);
         }
