@@ -21,6 +21,10 @@ function checkPage() {
     if(pageName) {
 
         var jsFileName = "js/" + pageName + ".js";
+        //getJavascript(jsFileName);
+        //if (pageName == "welcome") {
+        //    getJavascript("js/settingsWelcome.js");
+        //}
         $.getScript(jsFileName)
 
         .done(function( pageName, textStatus ) {
@@ -47,6 +51,20 @@ function checkPage() {
         //disableOtherCSS(pageName);
     }
 }
+
+//function getJavascript(jsFileName) {
+//    $.getScript(jsFileName)
+//
+//    .done(function( pageName, textStatus ) {
+//        console.log( textStatus );
+//    })
+//
+//    .fail(function( jqxhr, statusText, errorThrown ) {
+//        console.log(errorThrown);
+//        console.log(statusText);
+//        console.log(jqxhr);
+//    });
+//}
 
 function disableOtherCSS(pageName) {
 

@@ -102,7 +102,6 @@ tr {
 }
 
 #taskTable {
-    /*height: 60%;*/
     overflow: scroll;
 }
 
