@@ -1,7 +1,16 @@
 $(document).ready(function() {
-    var data = localStorage.getItem("settings");
-    var patID = localStorage.getItem("patient");
+    var createReminderButton = localStorage.getItem("createReminderButton");
+    var callButton = localStorage.getItem("callButton");
 
-    alert(data[0]["Layout"]);
-    alert(patID);
+    if (createReminderButton == 1) {
+        if (callButton == 1) {     // call button and create reminder button
+
+        } else {                    // create reminder button only
+
+        }
+    } else if (callButton == 1) {   // call button only
+
+    }  else {                       // no call or create reminder button
+
+    }
 });
