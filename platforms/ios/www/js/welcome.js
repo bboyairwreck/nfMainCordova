@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    var data = localStorage.getItem("Settings");
+    var data = localStorage.getItem("settings");
+    var patID = localStorage.getItem("patient");
 
-    alert(data);
+    alert(data[0]["GreetingSound"]);
+    alert(patID);
 });

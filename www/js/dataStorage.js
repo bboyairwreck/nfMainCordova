@@ -1,19 +1,32 @@
-if (localStorage.getItem("Settings") == null) {
-    var url = "http://ericchee.com/neverforgotten/getSettings_Patient.php"
+//localStorage.removeItem("Settings");
+//localStorage.removeItem("patientID");
+
+if (localStorage.getItem("settings") === null) {
+    fetchSettings();
+}
+if (localStorage.getItem("patient") === null) {
+    localStorage.setItem("patient", 17);
+}
+
+function fetchSettings() {
+    var url = "http://ericchee.com/neverforgotten/getSettings_Patient.php";
     $.ajax(url, {
         dataType : "json",
         data : {
-            'n': 17
+            'n' : 17
         },
         success : ajaxSuccess,
         error : ajaxError
     });
-
-    function ajaxSuccess(data) {
-        alert(data);
-        localStorage.setItem("Settings", data);
-    }
 }
-if (localStorage.getItem("patientID") == null) {
-    localStorage.setItem("patientID", 17);
+
+function ajaxSuccess(data) {
+    localStorage.setItem("settings", data);
+}
+
+function ajaxError( xhr, status, errorThrown ) {
+    alert(errorThrown);
+    console.log( "Error: " + errorThrown );
+    console.log( "Status: " + status );
+    console.dir( xhr );
 }
