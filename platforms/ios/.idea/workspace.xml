@@ -119,8 +119,8 @@
       <file leaf-file-name="dataStorage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../www/js/dataStorage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.31045243" vertical-offset="439" max-vertical-offset="1080">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.43837753" vertical-offset="349" max-vertical-offset="1095">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -167,8 +167,8 @@
         <option value="$PROJECT_DIR$/../../www/welcome.html" />
         <option value="$PROJECT_DIR$/../../www/js/action.js" />
         <option value="$PROJECT_DIR$/../../www/js/common.js" />
-        <option value="$PROJECT_DIR$/../../www/js/dataStorage.js" />
         <option value="$PROJECT_DIR$/../../www/js/welcome.js" />
+        <option value="$PROJECT_DIR$/../../www/js/dataStorage.js" />
       </list>
     </option>
   </component>
@@ -764,8 +764,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../www/js/dataStorage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.31045243" vertical-offset="439" max-vertical-offset="1080">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.43837753" vertical-offset="349" max-vertical-offset="1095">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
