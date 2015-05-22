@@ -81,3 +81,20 @@ function daysInMonth(month, year) {
     return new Date(year, month, 0).getDate();
 }
 
+function getCurDateString() {
+    var nowDate = new Date();
+    var monthString = "" + (nowDate.getMonth() + 1);
+    var dayString = "" + nowDate.getDate();
+
+    if ((nowDate.getMonth() + 1) < 10) {
+        monthString = "0" + "" + monthString;
+    }
+
+    if (nowDate.getDate() < 10) {
+        dayString = "0" + "" + dayString;
+    }
+
+    var nowDateString = nowDate.getFullYear() + "-" + monthString + "-" + dayString;
+
+    return nowDateString;
+}
