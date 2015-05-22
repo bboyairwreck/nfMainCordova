@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -19,6 +18,7 @@
 		2FA2895C3F3F8F86119F43FE /* viewAllReminders.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2885FDE21ACCCF25AC592 /* viewAllReminders.png */; };
 		2FA28A2741F882FCDC5734BC /* welcome.css in Resources */ = {isa = PBXBuildFile; fileRef = 2FA289D6A066027E6BC13AA3 /* welcome.css */; };
 		2FA28BECC1836DD9A11681E2 /* sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA28E60A3A0F739965E5524 /* sos.png */; };
+		2FA28C44D2FE05697E711C53 /* app.js in Sources */ = {isa = PBXBuildFile; fileRef = 2FA28EDDD0502A8146228699 /* app.js */; };
 		2FA28F5384F0B9192F31E4CB /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FA28827EBAB3CFFE4DD9E3F /* call.png */; };
 		2FA28FC518AC4E7EBD7B2265 /* action.css in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2806F80D063A81C197613 /* action.css */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
@@ -51,6 +51,9 @@
 		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		A09672A14B9F4F009616A44E /* TtsPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F808810F192476BA71951D6 /* TtsPlugin.m */; };
+		709A1B19B2F24446B34A1913 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FE48C4D62E4EE884A47C63 /* AVFoundation.framework */; };
+		E0F65CCEFF0B452EAF9745E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B498F1EE93EB44DFA8EA0850 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,7 @@
 		2FA288D292BA0CF6E83E5DC9 /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
 		2FA289D6A066027E6BC13AA3 /* welcome.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = welcome.css; path = ../../www/css/welcome.css; sourceTree = "<group>"; };
 		2FA28E60A3A0F739965E5524 /* sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sos.png; sourceTree = "<group>"; };
+		2FA28EDDD0502A8146228699 /* app.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = app.js; path = ../../www/js/app.js; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -125,6 +129,10 @@
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = NFMainCordova/config.xml; sourceTree = "<group>"; };
+		1F808810F192476BA71951D6 /* TtsPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "TtsPlugin.m"; path = "com.lefortsoftware.ttsplugin/TtsPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		63A04C7811974E62ACF349D4 /* TtsPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TtsPlugin.h"; path = "com.lefortsoftware.ttsplugin/TtsPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		60FE48C4D62E4EE884A47C63 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "AVFoundation.framework"; path = "System/Library/Frameworks/AVFoundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		B498F1EE93EB44DFA8EA0850 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +144,8 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				709A1B19B2F24446B34A1913 /* AVFoundation.framework in Frameworks */,
+				E0F65CCEFF0B452EAF9745E5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +198,7 @@
 				2FA289D6A066027E6BC13AA3 /* welcome.css */,
 				2FA28001EF1B82D3C5F60FA9 /* action.html */,
 				2FA2806F80D063A81C197613 /* action.css */,
+				2FA28EDDD0502A8146228699 /* app.js */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -219,6 +230,8 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				60FE48C4D62E4EE884A47C63 /* AVFoundation.framework */,
+				B498F1EE93EB44DFA8EA0850 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -234,6 +247,8 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				1F808810F192476BA71951D6 /* TtsPlugin.m */,
+				63A04C7811974E62ACF349D4 /* TtsPlugin.h */,
 			);
 			name = Plugins;
 			path = NFMainCordova/Plugins;
@@ -315,7 +330,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 72FN7QK5DS;
@@ -434,6 +449,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				2FA28C44D2FE05697E711C53 /* app.js in Sources */,
+				A09672A14B9F4F009616A44E /* TtsPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

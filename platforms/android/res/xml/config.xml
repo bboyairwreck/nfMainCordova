@@ -10,4 +10,9 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <widget>
+        <feature name="TtsPlugin">
+            <param name="android-package" value="com.lefortsoftware.ttsplugin.TtsPlugin" />
+        </feature>
+    </widget>
 </widget>

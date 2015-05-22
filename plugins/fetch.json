@@ -1,0 +1,9 @@
+{
+    "com.lefortsoftware.ttsplugin": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/steevelefort/cordova3-ios-tts-plugin",
+            "subdir": "."
+        }
+    }
+}
