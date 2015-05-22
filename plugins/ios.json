@@ -27,6 +27,14 @@
                         {
                             "xml": "<feature name=\"TtsPlugin\"><param name=\"ios-package\" value=\"TtsPlugin\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LocalNotification\"><param name=\"ios-package\" onload=\"true\" value=\"APPLocalNotification\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -36,7 +44,17 @@
     "installed_plugins": {
         "com.lefortsoftware.ttsplugin": {
             "PACKAGE_NAME": "edu.neverforgotten.maincordova"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "edu.neverforgotten.maincordova"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "edu.neverforgotten.maincordova"
+        },
+        "de.appplant.cordova.common.registerusernotificationsettings": {
+            "PACKAGE_NAME": "edu.neverforgotten.maincordova"
+        }
+    }
 }

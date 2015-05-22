@@ -24,30 +24,3 @@ var app = {
 };
 
 app.initialize();
-
-//document.addEventListener("deviceready", loadTTS, false);
-//
-//function loadTTS() {
-//    //alert("loadTTS running");
-//    if (ttsPlugin != null) {
-//
-//        ttsPlugin.setRate(0.1); // Set voice speed : default is "0.2"
-//
-//        ttsPlugin.setLanguage("en-US"); // Set voice language : default is "en-US"
-//
-//        ttsPlugin.initTTS(successCallBack, failCallBack); // Init Plugin : failCallBack doesn't work yet
-//
-//
-//    } else {
-//        alert("nope");
-//    }
-//}
-//
-//function successCallBack() {
-////                alert("tts worked?");
-//
-//    ttsPlugin.speak("Never Forgotten is a really cool application. And Wendy Kung is a poopy head."); // Say Hello
-//}
-//function failCallBack() {
-//    alert("tts did not work?");
-//}
