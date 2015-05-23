@@ -41,6 +41,7 @@ function fetchName() {
     });
 }
 
+
 function getFName(data) {
     localStorage.setItem("firstName", data["PersonFName"]);
     localStorage.setItem("lastName", data["PersonLName"]);

@@ -15,6 +15,10 @@ $(document).ready(function() {
         $("#confirmationBox").fadeIn(700).delay(2000).fadeOut(700);
         needConfirmation = false;
     }
+    if (localStorage.getItem("scrollingArrows") == 0) {
+        $("#remindersAndArrows").html("<div id='remindersWrap'></div>");
+        $("#remindersWrap").css("padding-right", "32px");
+    }
     var date = getCurDateString();
     var dateString = dateFormat(date);
     $("#date").text(dateString["dayName"] + ", " + dateString["dateLine"]);

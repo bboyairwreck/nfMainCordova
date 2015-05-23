@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    $("#welcomeTitle").html("Hello " + localStorage.getItem("firstName") + ".");
 });
 
 if (localStorage.getItem("greetingSound") == 1) {
