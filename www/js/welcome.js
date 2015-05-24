@@ -26,22 +26,3 @@ function successCallBack() {
     ttsPlugin.speak("Good morning " + name + ". Today is " + todaysDate); // Good Morning Sarah. Today is May 22, 2015.
 }
 function failCallBack() {}
-
-
-//function getCurDateString() {
-//    var nowDate = new Date();
-//    var monthString = "" + (nowDate.getMonth() + 1);
-//    var dayString = "" + nowDate.getDate();
-//
-//    if ((nowDate.getMonth() + 1) < 10) {
-//        monthString = "0" + "" + monthString;
-//    }
-//
-//    if (nowDate.getDate() < 10) {
-//        dayString = "0" + "" + dayString;
-//    }
-//
-//    var nowDateString = nowDate.getFullYear() + "-" + monthString + "-" + dayString;
-//
-//    return nowDateString;
-//}

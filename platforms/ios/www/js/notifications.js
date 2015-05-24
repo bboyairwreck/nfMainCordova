@@ -45,27 +45,33 @@ function receivedAllRemindersOfPatient(data) {
 
         var remID = reminder["ReminderID"];
 
-        alert(dateTimeToDateObj(eventTime).toString() + "  vs  " + reminderTime.toString());
-        //var d = dateTimeToDateObj(eventDateString);
-        ////alert("ReminderTime" + new Date(eventDateString).toDateString());
-        //alert("ReminderTime" + d.toDateString());
+        //alert(dateTimeToDateObj(eventTime).toString() + "  vs  " + reminderTime.toString());
+
     }
 
+
     var now = new Date().getTime();                 // TODO eventDateTime
-    var _5_sec_from_now = new Date(now + 5*1000);   // TODO
+    var _5_sec_from_now = new Date(now + 2*1000);   // TODO
 
     // Notifications
     cordova.plugins.notification.local.schedule({
         id: 1,
         at:_5_sec_from_now,
-        data: { meetingID:"Hello"}
+        data: { eventName:"This is data from a notification"}
     });
 
     cordova.plugins.notification.local.on("trigger", function(notification) {
         //alert("triggered: " + notification.id);
         var dataJSON = JSON.parse(notification.data);
 
-        alert(dataJSON["meetingID"]);
+        alert(dataJSON["eventName"]);
+
+        var $notifModalWrap = $("#notificationModalWrap");
+        $("#notificationModalWrap h1").text(dataJSON["eventName"]);
+        //$notifModalWrap.fadeIn(1000);
+        //$notifModalWrap.css("display", "block");
+
+
     });
 }
 

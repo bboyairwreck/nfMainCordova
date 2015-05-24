@@ -25,17 +25,18 @@ function checkPage() {
         //if (pageName == "welcome") {
         //    getJavascript("js/settingsWelcome.js");
         //}
-        $.getScript(jsFileName)
-
-        .done(function( pageName, textStatus ) {
-           console.log( textStatus );
-        })
-
-        .fail(function( jqxhr, statusText, errorThrown ) {
-            console.log(errorThrown);
-            console.log(statusText);
-            console.log(jqxhr);
-        });
+        getJavascript(jsFileName);
+        //$.getScript(jsFileName)
+        //
+        //.done(function( pageName, textStatus ) {
+        //   console.log( textStatus );
+        //})
+        //
+        //.fail(function( jqxhr, statusText, errorThrown ) {
+        //    console.log(errorThrown);
+        //    console.log(statusText);
+        //    console.log(jqxhr);
+        //});
 
         var cssFileName = "css/" + pageName +".css";
         var fileref = document.createElement("link");
@@ -52,19 +53,19 @@ function checkPage() {
     }
 }
 
-//function getJavascript(jsFileName) {
-//    $.getScript(jsFileName)
-//
-//    .done(function( pageName, textStatus ) {
-//        console.log( textStatus );
-//    })
-//
-//    .fail(function( jqxhr, statusText, errorThrown ) {
-//        console.log(errorThrown);
-//        console.log(statusText);
-//        console.log(jqxhr);
-//    });
-//}
+function getJavascript(jsFileName) {
+    $.getScript(jsFileName)
+
+    .done(function( pageName, textStatus ) {
+        console.log( textStatus );
+    })
+
+    .fail(function( jqxhr, statusText, errorThrown ) {
+        console.log(errorThrown);
+        console.log(statusText);
+        console.log(jqxhr);
+    });
+}
 
 function disableOtherCSS(pageName) {
 
