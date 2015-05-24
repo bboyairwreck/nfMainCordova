@@ -21,22 +21,8 @@ function checkPage() {
     if(pageName) {
 
         var jsFileName = "js/" + pageName + ".js";
-        //getJavascript(jsFileName);
-        //if (pageName == "welcome") {
-        //    getJavascript("js/settingsWelcome.js");
-        //}
+
         getJavascript(jsFileName);
-        //$.getScript(jsFileName)
-        //
-        //.done(function( pageName, textStatus ) {
-        //   console.log( textStatus );
-        //})
-        //
-        //.fail(function( jqxhr, statusText, errorThrown ) {
-        //    console.log(errorThrown);
-        //    console.log(statusText);
-        //    console.log(jqxhr);
-        //});
 
         var cssFileName = "css/" + pageName +".css";
         var fileref = document.createElement("link");
@@ -48,7 +34,7 @@ function checkPage() {
         if (typeof fileref != "undefined") {
             document.getElementsByTagName("head")[0].appendChild(fileref);
         }
-        //
+
         //disableOtherCSS(pageName);
     }
 }

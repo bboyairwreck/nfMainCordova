@@ -68,7 +68,7 @@ function receivedAllRemindersOfPatient(data) {
 
         var $notifModalWrap = $("#notificationModalWrap");
         $("#notificationModalWrap h1").text(dataJSON["eventName"]);
-        //$notifModalWrap.fadeIn(1000);
+        $notifModalWrap.fadeIn(1000);
         //$notifModalWrap.css("display", "block");
 
 
@@ -84,3 +84,9 @@ function dateTimeToDateObj(dateTimeString) {
 
     return d;
 }
+
+$("#notifDismissBtn").on("touchend", function(){
+    alert("Dismiss button clicked");
+    var $notifModalWrap = $("#notificationModalWrap");
+    $notifModalWrap.fadeOut(300);
+});
