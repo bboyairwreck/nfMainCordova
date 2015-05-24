@@ -21,11 +21,23 @@ function loadNotif() {
 
         var curEventDate = new Date(dataJSON["eventTime"]);
         var curEventID = dataJSON["eventID"];
+        var curEventTitle = dataJSON["eventTitle"];
 
         var $notifModalWrap = $("#notificationModalWrap");
         $("#notificationModalWrap h1").text(dataJSON["eventTitle"]);
         $notifModalWrap.fadeIn(500);
 
+        // Speak notification
+        document.addEventListener("deviceready", function(){
+            ttsPlugin.setRate(0.1); // Set voice speed : default is "0.2"
+            ttsPlugin.setLanguage("en-us"); // Set voice language : default is "en-US"
+            ttsPlugin.initTTS(function() {
+
+                var name = localStorage.getItem("firstName");
+                ttsPlugin.speak("Hello " + name + ". Don't forget. " + curEventTitle + " is at " + curEventDate.toString());
+
+            }, function(){}); // Init Plugin : failCallBack doesn't work yet
+        }, false);
     });
 
     // Show Notification Modal on receive
