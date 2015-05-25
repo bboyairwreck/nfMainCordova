@@ -230,7 +230,7 @@ function getEventsSuccess(data) {
         if (taskTable.clientHeight < taskTable.scrollHeight) {
             // insert arrows
             $("img.arrowIndex").css("display", "block");
-            $(".calTaskName").css("padding-right", "80px");
+            $(".calTaskName").css("padding-right", "77px");
         } else {
             $("img.arrowIndex").css("display", "none");
             $(".calTaskName").css("padding-right", "0px");
