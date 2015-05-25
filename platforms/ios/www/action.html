@@ -34,7 +34,20 @@
         <!-- This is were the content of your app goes -->
         <div class="content" id="action">
             <h2 id="actionSubtitle">What would you like to do?</h2>
-            <div id="actionTouchWrap"></div>
+            <div id="actionTouchWrap">
+
+                <a id="aViewRemindersBtn" href='viewCalendar.html' data-transition='slide-in'>
+                    <img src='img/viewAllReminders.png' alt='View All Reminders' />
+                </a>
+
+                <a id="aCreateBtn" style="display:none" href='createReminderName.html' data-transition='slide-in'>
+                    <img src='img/createReminder.png' alt='Create Reminder' />
+                </a>
+
+                <a id="aCallBtn" style="display:none" href='contacts.html' data-transition='slide-in'>
+                    <img src='img/call.png' alt='Call' />
+                </a>
+            </div>
         </div>
 
         <div data-href="index.html">

@@ -3,23 +3,20 @@ $(document).ready(function() {
     var callButton = localStorage.getItem("callButton");
     var remindersLayout = localStorage.getItem("layout");
 
-    var viewRemindersHtml = "<a id='actionViewAllImg' href='viewCalendar.html' data-transition='slide-in'><img src='img/viewAllReminders.png' alt='View All Reminders' /></a>";
+    var $viewReminder = $('#aViewRemindersBtn');
+    var $createBtn = $("#aCreateBtn");
+    var $callBtn = $("#aCallBtn");
+
     if (remindersLayout == "List") {
-        viewRemindersHtml = "<a id='actionViewAllImg' href='viewAllReminders.html' data-transition='slide-in'><img src='img/viewAllReminders.png' alt='View All Reminders' /></a>";
+        $viewReminder.attr('href', 'viewAllReminders.html');
     }
-    var createReminderHtml = "<a href='createReminderName.html' data-transition='slide-in'><img src='img/createReminder.png' alt='Create Reminder' /></a>";
-    var callButtonHtml = "<a href='contacts.html' data-transition='slide-in'><img src='img/call.png' alt='Call' /></a>";
 
     if (createReminderButton == 1) {
-        if (callButton == 1) {     // call button and create reminder button
-            $("#actionTouchWrap").html(viewRemindersHtml + createReminderHtml + callButtonHtml);
-        } else {                    // create reminder button only
-            $("#actionTouchWrap").html(viewRemindersHtml + createReminderHtml);
-        }
-    } else if (callButton == 1) {   // call button only
-        $("#actionTouchWrap").html(viewRemindersHtml + callButtonHtml);
-    }  else {                       // no call or create reminder button
-        $("#actionTouchWrap").html(viewRemindersHtml);
+        $createBtn.css("display", "block");
+    }
+
+    if (callButton == 1) {   // call button only
+        $callBtn.css("display", "block");
     }
 });
 
