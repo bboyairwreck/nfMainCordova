@@ -98,3 +98,22 @@ function getCurDateString() {
 
     return nowDateString;
 }
+
+
+function speakPhrase(phrase) {
+    //alert("loadTTS running");
+    document.addEventListener("deviceready", function() {
+
+        if (ttsPlugin != null) {
+            ttsPlugin.setRate(0.1); // Set voice speed : default is "0.2"
+            ttsPlugin.setLanguage("en-us"); // Set voice language : default is "en-US"
+            ttsPlugin.initTTS(function() {
+                ttsPlugin.speak(phrase);
+            }, function(){}); // Init Plugin : failCallBack doesn't work yet
+        } else {
+            alert("Error: text to speech plugin is undefined");
+        }
+
+    }, false);
+
+}
