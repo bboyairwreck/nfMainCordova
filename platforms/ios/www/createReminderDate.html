@@ -24,41 +24,65 @@
 </head>
 <body>
 
-<!-- This is were the content of your app goes -->
-<div class="content" id="createReminderDate">
-    <div id="leftCalPanel">
-        <header class="create">
-            <div id="details"></div>
-            <h1 id="greeting">What day is the event?</h1>
+    <!-- This is were the content of your app goes -->
+    <div class="content" id="createReminderDate">
+        <header class="colorHeader">
+            <h1>Creating A Reminder</h1>
         </header>
 
-        <div id="backName" data-href="createReminderName.html">
-            <img class="navButtons back" src="img/back.png" alt="Back">
-        </div>
-    </div>
+        <div id="leftCalPanel">
+            <header class="create">
+                <div id="details"></div>
+                <h1 id="greeting">What day is the event?</h1>
+            </header>
 
-    <div id="rightCalPanel">
-        <div id="calendarWrap">
-            <ul class="table-view" id="calTitle">
-                <li class="table-view-divider" id="monthYear"></li>
-            </ul>
-            <table id="cal" style="width:100%">
-                <tr class="calHeader">
-                    <th>SUN</th>
-                    <th>MON</th>
-                    <th>TUES</th>
-                    <th>WED</th>
-                    <th>THURS</th>
-                    <th>FRI</th>
-                    <th>SAT</th>
-                </tr>
-            </table>
+            <div id="backName" data-href="createReminderName.html">
+                <img class="navButtons back" src="img/back.png" alt="Back">
+            </div>
         </div>
 
-        <div id="nextDate" data-href="createReminderTime.html">
-            <img class="navButtons next" src="img/next.png" alt="Next">
+        <div id="rightCalPanel">
+            <div id="calendarWrap">
+                <ul class="table-view" id="calTitle">
+                    <li class="table-view-divider" id="monthYear"></li>
+                </ul>
+                <table id="cal" style="width:100%">
+                    <tr class="calHeader">
+                        <th>SUN</th>
+                        <th>MON</th>
+                        <th>TUES</th>
+                        <th>WED</th>
+                        <th>THURS</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="nextDate" data-href="createReminderTime.html">
+                <img class="navButtons next" src="img/next.png" alt="Next">
+            </div>
         </div>
+        <!-- end of .content -->
+
+        <!-- Notification -->
+        <div id="notificationModalWrap" style="display: none; position: fixed; left:5%; top:5%; width: 90%; height: 90%; background-color: rgba(0,0,0,.5); text-align: center;">
+            <h1>Lunch with Brian</h1>
+            <h3>Today at 12:30PM</h3>
+            <img src="img/reminderNotif.png" alt="Reminder Icon">
+
+            <!-- "Dismiss" & "Remind Me Later" buttons-->
+            <div>
+                <img id="notifDismissBtn" src="img/dismiss.png" alt="DISMISS" />
+                <img id="notifRemindLaterBtn" src="img/remindMeLater.png" alt="REMIND ME LATER" />
+            </div>
+        </div>
+
+        <!-- ghost anchor for anc -->
+        <div style="display:none">
+            <a id="ghost" href="index.html" data-transition="slide-in"></a>
+        </div>
+
     </div>
-</div>
 </body>
 </html>

@@ -1,65 +1,88 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Never Forgotten</title>
-    <meta charset="utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <head>
+        <title>Never Forgotten</title>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-    <link rel="stylesheet" type="text/css" href="css/common.css" />
-    <link rel="stylesheet" type="text/css" href="css/ratchet.css" />
-    <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.css" />
+        <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet.css" />
+        <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.css" />
 
-    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 
-    <script type="text/javascript" src="js/ratchet2.js"></script>
-    <script type="text/javascript" src="js/push.js"></script>
+        <script type="text/javascript" src="js/ratchet2.js"></script>
+        <script type="text/javascript" src="js/push.js"></script>
 
 
-    <script type="text/javascript" src="js/navigation.js"></script>
-    <script type="text/javascript" src="js/common.js"></script>
+        <script type="text/javascript" src="js/navigation.js"></script>
+        <script type="text/javascript" src="js/common.js"></script>
 
-</head>
-<body>
+    </head>
+    <body>
 
-<!-- This is were the content of your app goes -->
-<div class="content" id="createReminderTime">
-    <div id="leftPanel">
-        <header class="create">
-            <div id="details"></div>
-            <h1 id="greeting">What time?</h1>
-        </header>
+        <!-- This is were the content of your app goes -->
+        <div class="content" id="createReminderTime">
+            <header class="colorHeader">
+                <h1>Creating A Reminder</h1>
+            </header>
 
-        <div id="backDate" data-href="createReminderDate.html">
-            <img class="navButtons back" src="img/back.png" alt="Back">
-        </div>
-    </div>
+            <div id="leftPanel">
+                <header class="create">
+                    <div id="details"></div>
+                    <h1 id="greeting">What time?</h1>
+                </header>
 
-    <div id="rightPanel">
-        <div class="create" id="createTime">
-            <div id="setTime">
-                <div id="hourInput" class="timeInput">
-                    <input type="number" id="hourNum" min="1" max="12" step="1" class="numTime" />
-                    <label>HOURS</label>
+                <div id="backDate" data-href="createReminderDate.html">
+                    <img class="navButtons back" src="img/back.png" alt="Back">
                 </div>
-                <div id="separator" class="timeInput">:</div>
-                <div id="minutesInput" class="timeInput">
-                    <input type="number" id="minuteNum" min="0" max="59" step="1" class="numTime" />
-                    <label>MINUTES</label>
+            </div>
+
+            <div id="rightPanel">
+                <div class="create" id="createTime">
+                    <div id="setTime">
+                        <div id="hourInput" class="timeInput">
+                            <input type="number" id="hourNum" min="1" max="12" step="1" class="numTime" />
+                            <label>HOURS</label>
+                        </div>
+                        <div id="separator" class="timeInput">:</div>
+                        <div id="minutesInput" class="timeInput">
+                            <input type="number" id="minuteNum" min="0" max="59" step="1" class="numTime" />
+                            <label>MINUTES</label>
+                        </div>
+                        <div id="timeButtons" class="timeInput">
+                            <img src="img/am_yellow.png" alt="AM" id="amButton" />
+                            <img src="img/pm_yellow.png" alt="PM" id="pmButton" />
+                        </div>
+                    </div>
                 </div>
-                <div id="timeButtons" class="timeInput">
-                    <img src="img/am_yellow.png" alt="AM" id="amButton" />
-                    <img src="img/pm_yellow.png" alt="PM" id="pmButton" />
+
+                <div id="nextTime" data-href="reminderConfirmation.html">
+                    <img class="navButtons next" src="img/next.png" alt="Next">
                 </div>
             </div>
         </div>
+        <!-- end of .content -->
 
-        <div id="nextTime" data-href="reminderConfirmation.html">
-            <img class="navButtons next" src="img/next.png" alt="Next">
+        <!-- Notification -->
+        <div id="notificationModalWrap" style="display: none; position: fixed; left:5%; top:5%; width: 90%; height: 90%; background-color: rgba(0,0,0,.5); text-align: center;">
+            <h1>Lunch with Brian</h1>
+            <h3>Today at 12:30PM</h3>
+            <img src="img/reminderNotif.png" alt="Reminder Icon">
+
+            <!-- "Dismiss" & "Remind Me Later" buttons-->
+            <div>
+                <img id="notifDismissBtn" src="img/dismiss.png" alt="DISMISS" />
+                <img id="notifRemindLaterBtn" src="img/remindMeLater.png" alt="REMIND ME LATER" />
+            </div>
         </div>
-    </div>
-</div>
-</body>
+
+        <!-- ghost anchor for anc -->
+        <div style="display:none">
+            <a id="ghost" href="index.html" data-transition="slide-in"></a>
+        </div>
+    </body>
 </html>
