@@ -1,6 +1,5 @@
-/**
- * Created by wendykung on 5/16/15.
- */
+var patientID = localStorage.getItem("patient");
+
 $(document).ready(function() {
     var today = new Date();
     //var dd = today.getDate();
@@ -140,14 +139,15 @@ function setupCalendar(monthYear) {
     $.ajax(url, {
         dataType : "json",
         data : {
-            'n' : monthYear
+            'n' : patientID,
+            'date' : monthYear
         },
-        success : setup,
-        error : ajaxError
+        success : setupCalendarSuccess,
+        error : calendarError
     });
 }
 
-function setup(data) {
+function setupCalendarSuccess(data) {
     if (data.length > 0) {
         for (var i = 0; i < data.length; i++) {
             var $date = data[i]["EventTime"];
@@ -162,14 +162,15 @@ function getEvents(checkDate) {
     $.ajax(url, {
         dataType : "json",
         data : {
-            'n' : checkDate
+            'n' : patientID,
+            'date' : checkDate
         },
-        success : ajaxSuccess,
-        error : ajaxError
+        success : getEventsSuccess,
+        error : calendarError
     });
 }
 
-function ajaxSuccess(data) {
+function getEventsSuccess(data) {
     $("#taskTable").empty();
     if (data.length > 0) {
         for (var i = 0; i < data.length; i++){
@@ -191,7 +192,7 @@ function ajaxSuccess(data) {
     }
 }
 
-function ajaxError( xhr, status, errorThrown ) {
+function calendarError( xhr, status, errorThrown ) {
     alert( "Sorry, there was Ajax problem!" );
     console.log( "Error: " + errorThrown );
     console.log( "Status: " + status );
