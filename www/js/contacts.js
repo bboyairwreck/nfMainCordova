@@ -1,3 +1,5 @@
+var patientID = localStorage.getItem("patient");
+
 $(document).ready(function() {
     fetchContacts();
 });
@@ -10,12 +12,12 @@ function fetchContacts() {
         data : {
             'n' : patientID
         },
-        success : ajaxSuccess,
+        success : contactsSuccess,
         error : ajaxError
     });
 }
 
-function ajaxSuccess(data) {
+function contactsSuccess(data) {
 
     // TODO Remove this so that way we don't clear anything and only prepend
     //$("#remindersWrap").html("");
@@ -34,13 +36,4 @@ function ajaxSuccess(data) {
 
         $("#contactsWrap").append($newCard);
     }
-
-
-}
-
-function ajaxError( xhr, status, errorThrown ) {
-    alert("Sorry, there was Ajax problem!");
-    console.log("Error: " + errorThrown);
-    console.log("Status: " + status);
-    console.dir(xhr);
 }

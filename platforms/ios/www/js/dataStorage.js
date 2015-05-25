@@ -24,7 +24,7 @@ function fetchSettings() {
         data : {
             'n' : 17
         },
-        success : ajaxSuccess,
+        success : settingsSuccess,
         error : ajaxError
     });
 }
@@ -36,18 +36,18 @@ function fetchName() {
         data : {
             'n' : 17
         },
-        success : getFName,
+        success : setName,
         error : ajaxError
     });
 }
 
 
-function getFName(data) {
+function setName(data) {
     localStorage.setItem("firstName", data["PersonFName"]);
     localStorage.setItem("lastName", data["PersonLName"]);
 }
 
-function ajaxSuccess(data) {
+function settingsSuccess(data) {
     //var settings = [data["Layout"], data["CreateReminderButton"], data["CallButton"], data["GreetingSound"], data["TextSize"], data["Input"], data["ScrollingArrows"]];
 
     localStorage.setItem("layout", data["Layout"]);
@@ -57,11 +57,4 @@ function ajaxSuccess(data) {
     localStorage.setItem("textSize", data["TextSize"]);
     localStorage.setItem("input", data["Input"]);
     localStorage.setItem("scrollingArrows", data["ScrollingArrows"]);
-}
-
-function ajaxError( xhr, status, errorThrown ) {
-    alert(errorThrown);
-    console.log( "Error: " + errorThrown );
-    console.log( "Status: " + status );
-    console.dir( xhr );
 }

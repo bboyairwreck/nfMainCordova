@@ -28,16 +28,9 @@ function loadNotif() {
         $notifModalWrap.fadeIn(500);
 
         // Speak notification
-        document.addEventListener("deviceready", function(){
-            ttsPlugin.setRate(0.1); // Set voice speed : default is "0.2"
-            ttsPlugin.setLanguage("en-us"); // Set voice language : default is "en-US"
-            ttsPlugin.initTTS(function() {
-
-                var name = localStorage.getItem("firstName");
-                ttsPlugin.speak("Hello " + name + ". Don't forget. " + curEventTitle + " is at " + curEventDate.toString());
-
-            }, function(){}); // Init Plugin : failCallBack doesn't work yet
-        }, false);
+        var name = localStorage.getItem("firstName");
+        var phrase = "Hello " + name + ". Don't forget. " + curEventTitle + " is at " + curEventDate.toString();
+        speakPhrase(phrase);
     });
 
     // Show Notification Modal on receive
