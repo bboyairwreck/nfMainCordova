@@ -2,6 +2,36 @@ var patientID = localStorage.getItem("patient");
 
 $(document).ready(function() {
     fetchContacts();
+
+    if (localStorage.getItem("scrollingArrows") == 1) {
+        var contacts = $("#contactsWrap")[0];
+        if (contacts.clientHeight < contacts.scrollHeight) {
+            $("img.arrowIndex").css("display", "block");
+        }
+    }
+
+    $(".arrowIndex").click(function(){
+//$("#remindersWrap").scroll(function(){
+        var delta = 1;
+
+        if ($(this).attr("id") == "upArrowIndexContacts"){
+            delta = -1;
+        }
+
+        var $remWrap = $('#contactsWrap');
+        var scrollTop = $remWrap.scrollTop();
+        scrollTop += (delta*500);
+
+        //$remWrap.scrollTop(scrollTop + (delta*200));
+
+        //scrollTop += 100;
+
+        $remWrap.animate({
+            scrollTop:scrollTop
+        },500);
+
+        //$("#dateTimeWrap h1").text(scrollTop);
+    });
 });
 
 function fetchContacts() {

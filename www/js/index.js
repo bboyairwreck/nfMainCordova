@@ -15,10 +15,15 @@ $(document).ready(function() {
         $("#confirmationBox").fadeIn(700).delay(2000).fadeOut(700);
         needConfirmation = false;
     }
-    if (localStorage.getItem("scrollingArrows") == 1) {
-        $("img.arrowIndex").css("display", "block");
-        $("#remindersWrap").css("padding-right", "101px");
-    }
+
+    //if (localStorage.getItem("scrollingArrows") == 1) {
+    //    var reminders = $("#remindersWrap")[0];
+    //    if (reminders.clientHeight < reminders.scrollHeight) {
+    //        $("img.arrowIndex").css("display", "block");
+    //        $("#remindersWrap").css("padding-right", "101px");
+    //    }
+    //}
+
     var date = getCurDateString();
     var dateString = dateFormat(date);
     $("#date").text(dateString["dayName"] + ", " + dateString["dateLine"]);

@@ -36,10 +36,25 @@ header.contactText h1 {
 #contactsWrap {
     /*background-color: #F3F2F2;*/
     width: 90%;
-    height: 90%;
-    top: 5%;
+    height: 625px;
+    top: 70px;
     position: fixed;
     overflow: scroll;
+}
+
+.arrowIndex {
+    position: fixed;
+    z-index: 500;
+}
+
+#upArrowIndexContacts {
+    right: 20px;
+    top: 65px;
+}
+
+#downArrowIndexContacts {
+    right: 20px;
+    top: 625px;
 }
 
 .contactCardWrap {

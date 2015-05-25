@@ -147,15 +147,16 @@ header h2 {
     #remindersAndArrows {
         position: relative;
         height: 100%;
+        overflow: hidden;
     }
 
     #remindersWrap {
 
-        height: 73%;
+        height: 555px;
         /*width: 66.66666666666666666%;*/
         padding-top: 19px;
         padding-left: 32px;
-        padding-right: 32px;
+        padding-right: 101px;
 
         overflow: scroll;
     }

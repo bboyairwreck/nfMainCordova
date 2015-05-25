@@ -74,7 +74,7 @@ tr {
 
 .notMonth {
     background-color: lightgrey;
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 .hasEvent {
@@ -108,7 +108,7 @@ tr {
 .arrowIndex {
     position: fixed;
     z-index: 500;
-    display: none;
+    /*display: none;*/
 }
 
 #upArrowIndex {
