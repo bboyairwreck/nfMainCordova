@@ -19,6 +19,37 @@ $(document).ready(function() {
     //$("td[data-date='" + todayDate + "']").attr('id', 'today');
     //$("td[data-date='" + todayDate + "']").addClass("selected");
     //getEvents(todayDate);
+
+    //var taskTable = $("#taskTableWrap");
+    //if (taskTable.clientHeight < taskTable.scrollHeight) {
+    //    alert("too tall!");
+    //} else {
+    //    alert("not tall enough, sorry!");
+    //}
+
+    $(".arrowIndex").click(function(){
+//$("#remindersWrap").scroll(function(){
+        var delta = 1;
+
+        if ($(this).attr("id") == "upArrowIndex"){
+            delta = -1;
+        }
+
+        var $remWrap = $('#taskTableWrap');
+        var scrollTop = $remWrap.scrollTop();
+        scrollTop += (delta*500);
+
+        //$remWrap.scrollTop(scrollTop + (delta*200));
+
+        //scrollTop += 100;
+
+        $remWrap.animate({
+            scrollTop:scrollTop
+        },500);
+
+        //$("#dateTimeWrap h1").text(scrollTop);
+    });
+
 });
 
 function calendar(month, year) {
@@ -89,6 +120,10 @@ function calendar(month, year) {
         $("#monDay").html(getMonthString(month) + " " + today.getDate());
         getEvents(todayDate);
     }
+
+    // hides task menu arrows if necessary
+    $("img.arrowIndex").css("display", "none");
+    $(".calTaskName").css("padding-right", "0px");
 
     // navigation
     $("a.navigate-left").click(function() {
@@ -189,6 +224,17 @@ function getEventsSuccess(data) {
     } else {
         var $noTask = "<tr><td class='noTask'>No Events</td></tr>";
         $("#taskTable").prepend($noTask);
+    }
+    if (localStorage.getItem("scrollingArrows") == 1) {
+        var taskTable = $("#taskTableWrap")[0];
+        if (taskTable.clientHeight < taskTable.scrollHeight) {
+            // insert arrows
+            $("img.arrowIndex").css("display", "block");
+            $(".calTaskName").css("padding-right", "77px");
+        } else {
+            $("img.arrowIndex").css("display", "none");
+            $(".calTaskName").css("padding-right", "0px");
+        }
     }
 }
 

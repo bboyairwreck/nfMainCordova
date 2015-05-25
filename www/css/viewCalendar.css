@@ -35,6 +35,8 @@ td {
 #cal td {
     width: 14%;
     font-weight: bold;
+    font-size: 20pt;
+    border: grey solid 1px;
     /*border-top: grey solid 1px;*/
     /*border-bottom: grey solid 1px;*/
 }
@@ -81,7 +83,8 @@ tr {
 }
 
 .notMonth {
-    color: lightgrey;
+    background-color: lightgrey;
+    opacity: 0.2;
 }
 
 .hasEvent {
@@ -101,8 +104,31 @@ tr {
     /*border: black solid 1px;*/
 }
 
-#taskTable {
+#taskTableWrap {
     overflow: scroll;
+    height: 450px;
+    /*padding-right: 75px;*/
+    /*border: grey solid 1px;*/
+}
+
+#taskTable {
+    /*border-right: grey solid 1px;*/
+}
+
+.arrowIndex {
+    position: fixed;
+    z-index: 500;
+    display: none;
+}
+
+#upArrowIndex {
+    right: 8px;
+    top: 105px;
+}
+
+#downArrowIndex {
+    right: 8px;
+    top: 480px;
 }
 
 .noTask {
@@ -117,14 +143,16 @@ tr {
 
 .calTaskTime {
     width: 25%;
-    font-size: 14pt;
+    line-height: 1em;
+    font-size: 21pt;
     border-right: lightgrey solid 1px;
     color: #4A90E2;
 }
 
 .calTaskName {
     width: 75%;
-    font-size: 20pt;
+    line-height: 1em;
+    font-size: 27pt;
     text-align: left;
     padding-left: 3%;
     color: grey;

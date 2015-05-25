@@ -11,6 +11,7 @@
         <!-- <link rel="stylesheet" type="text/css" href="css/common.css" /> -->
         <link rel="stylesheet" type="text/css" href="css/ratchet.css" />
         <link rel="stylesheet" type="text/css" href="css/ratchet-theme-ios.css" />
+        <link rel="stylesheet" type="text/css" href="css/viewCalendar.css" />
 
         <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
 
@@ -50,7 +51,15 @@
                 <ul class="table-view">
                     <li class="table-view-divider" id="monDay"></li>
                 </ul>
-                <table id="taskTable" style="width:100%"></table>
+
+                <div ids="arrows">
+                    <img id="upArrowIndex" class="arrowIndex btnAnim" src="img/upArrow_grey.png" alt="Up Arrow"/>
+                    <img id="downArrowIndex" class="arrowIndex btnAnim" src="img/downArrow.png" alt="Down Arrow"/>
+                </div>
+
+                <div id="taskTableWrap">
+                    <table id="taskTable" style="width:100%"></table>
+                </div>
 
                 <a href="index.html" class="calBack" data-transition="slide-in">
                     <img class="navButtons back calBack" src="img/back.png" alt="Back">
