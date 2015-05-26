@@ -57,12 +57,39 @@ function contactsSuccess(data) {
 
         var name = data[i]["PersonFName"] + " " + data[i]["PersonLName"];
         var image = data[i]["PersonImage"];
+        var perID = data[i]["PersonID"];        // person's id of current companion
+
+        $newCard.attr("data-personID", perID);
 
         $contactName = $newCard.find(".contactName");
         $contactName.html(name);
 
         $contactImage = $newCard.find(".contactImg");
         $contactImage.attr('src', 'img/' + image);
+
+
+        // send message
+        $newCard.click(function(){
+            var perCompID = $(this).attr("data-personID");
+            document.addEventListener("deviceready", function(){
+
+                var patID = localStorage.getItem("patient");
+
+                //alert("patID:" + patID);
+
+                // get Firebase to Person we're calling
+                var fire = new Firebase('https://neverforgotten.firebaseio.com/');
+                var patCallLogFire = fire.child(perCompID + "/callLog");
+
+
+                // push to firebase - send your (patient's) id along with w
+                patCallLogFire.push({
+                    patientID:patID
+                });
+
+            }, false);
+
+        });
 
         $("#contactsWrap").append($newCard);
     }

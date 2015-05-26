@@ -17,6 +17,9 @@ if (localStorage.getItem("firstName") === null) {
     fetchName();
 }
 
+// PersonID of Companion
+localStorage.setItem("personComp", 43);
+
 function fetchSettings() {
     var url = "http://ericchee.com/neverforgotten/getSettings_Patient.php";
     $.ajax(url, {
